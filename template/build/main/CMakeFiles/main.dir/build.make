@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/su/stm32/f405/template
+CMAKE_SOURCE_DIR = /home/su/stm32pro_linux/template
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/su/stm32/f405/template/build
+CMAKE_BINARY_DIR = /home/su/stm32pro_linux/template/build
 
 # Include any dependencies generated for this target.
 include main/CMakeFiles/main.dir/depend.make
@@ -59,30 +59,45 @@ include main/CMakeFiles/main.dir/flags.make
 
 main/CMakeFiles/main.dir/main.c.o: main/CMakeFiles/main.dir/flags.make
 main/CMakeFiles/main.dir/main.c.o: ../main/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/su/stm32/f405/template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object main/CMakeFiles/main.dir/main.c.o"
-	cd /home/su/stm32/f405/template/build/main && arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/main.c.o   -c /home/su/stm32/f405/template/main/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/su/stm32pro_linux/template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object main/CMakeFiles/main.dir/main.c.o"
+	cd /home/su/stm32pro_linux/template/build/main && arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/main.c.o   -c /home/su/stm32pro_linux/template/main/main.c
 
 main/CMakeFiles/main.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/main.c.i"
-	cd /home/su/stm32/f405/template/build/main && arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/su/stm32/f405/template/main/main.c > CMakeFiles/main.dir/main.c.i
+	cd /home/su/stm32pro_linux/template/build/main && arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/su/stm32pro_linux/template/main/main.c > CMakeFiles/main.dir/main.c.i
 
 main/CMakeFiles/main.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/main.c.s"
-	cd /home/su/stm32/f405/template/build/main && arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/su/stm32/f405/template/main/main.c -o CMakeFiles/main.dir/main.c.s
+	cd /home/su/stm32pro_linux/template/build/main && arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/su/stm32pro_linux/template/main/main.c -o CMakeFiles/main.dir/main.c.s
+
+main/CMakeFiles/main.dir/system_stm32f4xx.c.o: main/CMakeFiles/main.dir/flags.make
+main/CMakeFiles/main.dir/system_stm32f4xx.c.o: ../main/system_stm32f4xx.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/su/stm32pro_linux/template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object main/CMakeFiles/main.dir/system_stm32f4xx.c.o"
+	cd /home/su/stm32pro_linux/template/build/main && arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/system_stm32f4xx.c.o   -c /home/su/stm32pro_linux/template/main/system_stm32f4xx.c
+
+main/CMakeFiles/main.dir/system_stm32f4xx.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/system_stm32f4xx.c.i"
+	cd /home/su/stm32pro_linux/template/build/main && arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/su/stm32pro_linux/template/main/system_stm32f4xx.c > CMakeFiles/main.dir/system_stm32f4xx.c.i
+
+main/CMakeFiles/main.dir/system_stm32f4xx.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/system_stm32f4xx.c.s"
+	cd /home/su/stm32pro_linux/template/build/main && arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/su/stm32pro_linux/template/main/system_stm32f4xx.c -o CMakeFiles/main.dir/system_stm32f4xx.c.s
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/main.c.o"
+"CMakeFiles/main.dir/main.c.o" \
+"CMakeFiles/main.dir/system_stm32f4xx.c.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 ../lib/libmain.a: main/CMakeFiles/main.dir/main.c.o
+../lib/libmain.a: main/CMakeFiles/main.dir/system_stm32f4xx.c.o
 ../lib/libmain.a: main/CMakeFiles/main.dir/build.make
 ../lib/libmain.a: main/CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/su/stm32/f405/template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library ../../lib/libmain.a"
-	cd /home/su/stm32/f405/template/build/main && $(CMAKE_COMMAND) -P CMakeFiles/main.dir/cmake_clean_target.cmake
-	cd /home/su/stm32/f405/template/build/main && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/su/stm32pro_linux/template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library ../../lib/libmain.a"
+	cd /home/su/stm32pro_linux/template/build/main && $(CMAKE_COMMAND) -P CMakeFiles/main.dir/cmake_clean_target.cmake
+	cd /home/su/stm32pro_linux/template/build/main && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 main/CMakeFiles/main.dir/build: ../lib/libmain.a
@@ -90,10 +105,10 @@ main/CMakeFiles/main.dir/build: ../lib/libmain.a
 .PHONY : main/CMakeFiles/main.dir/build
 
 main/CMakeFiles/main.dir/clean:
-	cd /home/su/stm32/f405/template/build/main && $(CMAKE_COMMAND) -P CMakeFiles/main.dir/cmake_clean.cmake
+	cd /home/su/stm32pro_linux/template/build/main && $(CMAKE_COMMAND) -P CMakeFiles/main.dir/cmake_clean.cmake
 .PHONY : main/CMakeFiles/main.dir/clean
 
 main/CMakeFiles/main.dir/depend:
-	cd /home/su/stm32/f405/template/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/su/stm32/f405/template /home/su/stm32/f405/template/main /home/su/stm32/f405/template/build /home/su/stm32/f405/template/build/main /home/su/stm32/f405/template/build/main/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/su/stm32pro_linux/template/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/su/stm32pro_linux/template /home/su/stm32pro_linux/template/main /home/su/stm32pro_linux/template/build /home/su/stm32pro_linux/template/build/main /home/su/stm32pro_linux/template/build/main/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : main/CMakeFiles/main.dir/depend
 

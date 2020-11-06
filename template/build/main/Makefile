@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/su/stm32/f405/template
+CMAKE_SOURCE_DIR = /home/su/stm32pro_linux/template
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/su/stm32/f405/template/build
+CMAKE_BINARY_DIR = /home/su/stm32pro_linux/template/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/su/stm32/f405/template/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/su/stm32/f405/template/build/CMakeFiles /home/su/stm32/f405/template/build/main/CMakeFiles/progress.marks
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f CMakeFiles/Makefile2 main/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/su/stm32/f405/template/build/CMakeFiles 0
+	cd /home/su/stm32pro_linux/template/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/su/stm32pro_linux/template/build/CMakeFiles /home/su/stm32pro_linux/template/build/main/CMakeFiles/progress.marks
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f CMakeFiles/Makefile2 main/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/su/stm32pro_linux/template/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f CMakeFiles/Makefile2 main/clean
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f CMakeFiles/Makefile2 main/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f CMakeFiles/Makefile2 main/preinstall
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f CMakeFiles/Makefile2 main/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f CMakeFiles/Makefile2 main/preinstall
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f CMakeFiles/Makefile2 main/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/su/stm32/f405/template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/su/stm32pro_linux/template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 main/CMakeFiles/main.dir/rule:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f CMakeFiles/Makefile2 main/CMakeFiles/main.dir/rule
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f CMakeFiles/Makefile2 main/CMakeFiles/main.dir/rule
 .PHONY : main/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ main: main/CMakeFiles/main.dir/rule
 
 # fast build rule for target.
 main/fast:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f main/CMakeFiles/main.dir/build.make main/CMakeFiles/main.dir/build
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f main/CMakeFiles/main.dir/build.make main/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
 main.o: main.c.o
@@ -131,7 +131,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f main/CMakeFiles/main.dir/build.make main/CMakeFiles/main.dir/main.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f main/CMakeFiles/main.dir/build.make main/CMakeFiles/main.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -140,7 +140,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f main/CMakeFiles/main.dir/build.make main/CMakeFiles/main.dir/main.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f main/CMakeFiles/main.dir/build.make main/CMakeFiles/main.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -149,8 +149,35 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f main/CMakeFiles/main.dir/build.make main/CMakeFiles/main.dir/main.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f main/CMakeFiles/main.dir/build.make main/CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
+
+system_stm32f4xx.o: system_stm32f4xx.c.o
+
+.PHONY : system_stm32f4xx.o
+
+# target to build an object file
+system_stm32f4xx.c.o:
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f main/CMakeFiles/main.dir/build.make main/CMakeFiles/main.dir/system_stm32f4xx.c.o
+.PHONY : system_stm32f4xx.c.o
+
+system_stm32f4xx.i: system_stm32f4xx.c.i
+
+.PHONY : system_stm32f4xx.i
+
+# target to preprocess a source file
+system_stm32f4xx.c.i:
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f main/CMakeFiles/main.dir/build.make main/CMakeFiles/main.dir/system_stm32f4xx.c.i
+.PHONY : system_stm32f4xx.c.i
+
+system_stm32f4xx.s: system_stm32f4xx.c.s
+
+.PHONY : system_stm32f4xx.s
+
+# target to generate assembly for a file
+system_stm32f4xx.c.s:
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f main/CMakeFiles/main.dir/build.make main/CMakeFiles/main.dir/system_stm32f4xx.c.s
+.PHONY : system_stm32f4xx.c.s
 
 # Help Target
 help:
@@ -164,6 +191,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... system_stm32f4xx.o"
+	@echo "... system_stm32f4xx.i"
+	@echo "... system_stm32f4xx.s"
 .PHONY : help
 
 
@@ -175,6 +205,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/su/stm32/f405/template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/su/stm32pro_linux/template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

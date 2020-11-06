@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/su/stm32/f405/template
+CMAKE_SOURCE_DIR = /home/su/stm32pro_linux/template
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/su/stm32/f405/template/build
+CMAKE_BINARY_DIR = /home/su/stm32pro_linux/template/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/su/stm32/f405/template/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/su/stm32/f405/template/build/CMakeFiles /home/su/stm32/f405/template/build/stdlib/src/CMakeFiles/progress.marks
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f CMakeFiles/Makefile2 stdlib/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/su/stm32/f405/template/build/CMakeFiles 0
+	cd /home/su/stm32pro_linux/template/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/su/stm32pro_linux/template/build/CMakeFiles /home/su/stm32pro_linux/template/build/stdlib/src/CMakeFiles/progress.marks
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f CMakeFiles/Makefile2 stdlib/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/su/stm32pro_linux/template/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f CMakeFiles/Makefile2 stdlib/src/clean
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f CMakeFiles/Makefile2 stdlib/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f CMakeFiles/Makefile2 stdlib/src/preinstall
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f CMakeFiles/Makefile2 stdlib/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f CMakeFiles/Makefile2 stdlib/src/preinstall
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f CMakeFiles/Makefile2 stdlib/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/su/stm32/f405/template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/su/stm32pro_linux/template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 stdlib/src/CMakeFiles/std.dir/rule:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f CMakeFiles/Makefile2 stdlib/src/CMakeFiles/std.dir/rule
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f CMakeFiles/Makefile2 stdlib/src/CMakeFiles/std.dir/rule
 .PHONY : stdlib/src/CMakeFiles/std.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ std: stdlib/src/CMakeFiles/std.dir/rule
 
 # fast build rule for target.
 std/fast:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/build
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/build
 .PHONY : std/fast
 
 misc.o: misc.c.o
@@ -131,7 +131,7 @@ misc.o: misc.c.o
 
 # target to build an object file
 misc.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/misc.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/misc.c.o
 .PHONY : misc.c.o
 
 misc.i: misc.c.i
@@ -140,7 +140,7 @@ misc.i: misc.c.i
 
 # target to preprocess a source file
 misc.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/misc.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/misc.c.i
 .PHONY : misc.c.i
 
 misc.s: misc.c.s
@@ -149,7 +149,7 @@ misc.s: misc.c.s
 
 # target to generate assembly for a file
 misc.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/misc.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/misc.c.s
 .PHONY : misc.c.s
 
 stm32f4xx_adc.o: stm32f4xx_adc.c.o
@@ -158,7 +158,7 @@ stm32f4xx_adc.o: stm32f4xx_adc.c.o
 
 # target to build an object file
 stm32f4xx_adc.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_adc.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_adc.c.o
 .PHONY : stm32f4xx_adc.c.o
 
 stm32f4xx_adc.i: stm32f4xx_adc.c.i
@@ -167,7 +167,7 @@ stm32f4xx_adc.i: stm32f4xx_adc.c.i
 
 # target to preprocess a source file
 stm32f4xx_adc.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_adc.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_adc.c.i
 .PHONY : stm32f4xx_adc.c.i
 
 stm32f4xx_adc.s: stm32f4xx_adc.c.s
@@ -176,7 +176,7 @@ stm32f4xx_adc.s: stm32f4xx_adc.c.s
 
 # target to generate assembly for a file
 stm32f4xx_adc.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_adc.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_adc.c.s
 .PHONY : stm32f4xx_adc.c.s
 
 stm32f4xx_can.o: stm32f4xx_can.c.o
@@ -185,7 +185,7 @@ stm32f4xx_can.o: stm32f4xx_can.c.o
 
 # target to build an object file
 stm32f4xx_can.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_can.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_can.c.o
 .PHONY : stm32f4xx_can.c.o
 
 stm32f4xx_can.i: stm32f4xx_can.c.i
@@ -194,7 +194,7 @@ stm32f4xx_can.i: stm32f4xx_can.c.i
 
 # target to preprocess a source file
 stm32f4xx_can.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_can.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_can.c.i
 .PHONY : stm32f4xx_can.c.i
 
 stm32f4xx_can.s: stm32f4xx_can.c.s
@@ -203,7 +203,7 @@ stm32f4xx_can.s: stm32f4xx_can.c.s
 
 # target to generate assembly for a file
 stm32f4xx_can.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_can.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_can.c.s
 .PHONY : stm32f4xx_can.c.s
 
 stm32f4xx_cec.o: stm32f4xx_cec.c.o
@@ -212,7 +212,7 @@ stm32f4xx_cec.o: stm32f4xx_cec.c.o
 
 # target to build an object file
 stm32f4xx_cec.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cec.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cec.c.o
 .PHONY : stm32f4xx_cec.c.o
 
 stm32f4xx_cec.i: stm32f4xx_cec.c.i
@@ -221,7 +221,7 @@ stm32f4xx_cec.i: stm32f4xx_cec.c.i
 
 # target to preprocess a source file
 stm32f4xx_cec.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cec.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cec.c.i
 .PHONY : stm32f4xx_cec.c.i
 
 stm32f4xx_cec.s: stm32f4xx_cec.c.s
@@ -230,7 +230,7 @@ stm32f4xx_cec.s: stm32f4xx_cec.c.s
 
 # target to generate assembly for a file
 stm32f4xx_cec.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cec.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cec.c.s
 .PHONY : stm32f4xx_cec.c.s
 
 stm32f4xx_crc.o: stm32f4xx_crc.c.o
@@ -239,7 +239,7 @@ stm32f4xx_crc.o: stm32f4xx_crc.c.o
 
 # target to build an object file
 stm32f4xx_crc.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_crc.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_crc.c.o
 .PHONY : stm32f4xx_crc.c.o
 
 stm32f4xx_crc.i: stm32f4xx_crc.c.i
@@ -248,7 +248,7 @@ stm32f4xx_crc.i: stm32f4xx_crc.c.i
 
 # target to preprocess a source file
 stm32f4xx_crc.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_crc.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_crc.c.i
 .PHONY : stm32f4xx_crc.c.i
 
 stm32f4xx_crc.s: stm32f4xx_crc.c.s
@@ -257,7 +257,7 @@ stm32f4xx_crc.s: stm32f4xx_crc.c.s
 
 # target to generate assembly for a file
 stm32f4xx_crc.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_crc.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_crc.c.s
 .PHONY : stm32f4xx_crc.c.s
 
 stm32f4xx_cryp.o: stm32f4xx_cryp.c.o
@@ -266,7 +266,7 @@ stm32f4xx_cryp.o: stm32f4xx_cryp.c.o
 
 # target to build an object file
 stm32f4xx_cryp.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp.c.o
 .PHONY : stm32f4xx_cryp.c.o
 
 stm32f4xx_cryp.i: stm32f4xx_cryp.c.i
@@ -275,7 +275,7 @@ stm32f4xx_cryp.i: stm32f4xx_cryp.c.i
 
 # target to preprocess a source file
 stm32f4xx_cryp.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp.c.i
 .PHONY : stm32f4xx_cryp.c.i
 
 stm32f4xx_cryp.s: stm32f4xx_cryp.c.s
@@ -284,7 +284,7 @@ stm32f4xx_cryp.s: stm32f4xx_cryp.c.s
 
 # target to generate assembly for a file
 stm32f4xx_cryp.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp.c.s
 .PHONY : stm32f4xx_cryp.c.s
 
 stm32f4xx_cryp_aes.o: stm32f4xx_cryp_aes.c.o
@@ -293,7 +293,7 @@ stm32f4xx_cryp_aes.o: stm32f4xx_cryp_aes.c.o
 
 # target to build an object file
 stm32f4xx_cryp_aes.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_aes.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_aes.c.o
 .PHONY : stm32f4xx_cryp_aes.c.o
 
 stm32f4xx_cryp_aes.i: stm32f4xx_cryp_aes.c.i
@@ -302,7 +302,7 @@ stm32f4xx_cryp_aes.i: stm32f4xx_cryp_aes.c.i
 
 # target to preprocess a source file
 stm32f4xx_cryp_aes.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_aes.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_aes.c.i
 .PHONY : stm32f4xx_cryp_aes.c.i
 
 stm32f4xx_cryp_aes.s: stm32f4xx_cryp_aes.c.s
@@ -311,7 +311,7 @@ stm32f4xx_cryp_aes.s: stm32f4xx_cryp_aes.c.s
 
 # target to generate assembly for a file
 stm32f4xx_cryp_aes.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_aes.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_aes.c.s
 .PHONY : stm32f4xx_cryp_aes.c.s
 
 stm32f4xx_cryp_des.o: stm32f4xx_cryp_des.c.o
@@ -320,7 +320,7 @@ stm32f4xx_cryp_des.o: stm32f4xx_cryp_des.c.o
 
 # target to build an object file
 stm32f4xx_cryp_des.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_des.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_des.c.o
 .PHONY : stm32f4xx_cryp_des.c.o
 
 stm32f4xx_cryp_des.i: stm32f4xx_cryp_des.c.i
@@ -329,7 +329,7 @@ stm32f4xx_cryp_des.i: stm32f4xx_cryp_des.c.i
 
 # target to preprocess a source file
 stm32f4xx_cryp_des.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_des.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_des.c.i
 .PHONY : stm32f4xx_cryp_des.c.i
 
 stm32f4xx_cryp_des.s: stm32f4xx_cryp_des.c.s
@@ -338,7 +338,7 @@ stm32f4xx_cryp_des.s: stm32f4xx_cryp_des.c.s
 
 # target to generate assembly for a file
 stm32f4xx_cryp_des.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_des.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_des.c.s
 .PHONY : stm32f4xx_cryp_des.c.s
 
 stm32f4xx_cryp_tdes.o: stm32f4xx_cryp_tdes.c.o
@@ -347,7 +347,7 @@ stm32f4xx_cryp_tdes.o: stm32f4xx_cryp_tdes.c.o
 
 # target to build an object file
 stm32f4xx_cryp_tdes.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_tdes.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_tdes.c.o
 .PHONY : stm32f4xx_cryp_tdes.c.o
 
 stm32f4xx_cryp_tdes.i: stm32f4xx_cryp_tdes.c.i
@@ -356,7 +356,7 @@ stm32f4xx_cryp_tdes.i: stm32f4xx_cryp_tdes.c.i
 
 # target to preprocess a source file
 stm32f4xx_cryp_tdes.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_tdes.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_tdes.c.i
 .PHONY : stm32f4xx_cryp_tdes.c.i
 
 stm32f4xx_cryp_tdes.s: stm32f4xx_cryp_tdes.c.s
@@ -365,7 +365,7 @@ stm32f4xx_cryp_tdes.s: stm32f4xx_cryp_tdes.c.s
 
 # target to generate assembly for a file
 stm32f4xx_cryp_tdes.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_tdes.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_cryp_tdes.c.s
 .PHONY : stm32f4xx_cryp_tdes.c.s
 
 stm32f4xx_dac.o: stm32f4xx_dac.c.o
@@ -374,7 +374,7 @@ stm32f4xx_dac.o: stm32f4xx_dac.c.o
 
 # target to build an object file
 stm32f4xx_dac.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dac.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dac.c.o
 .PHONY : stm32f4xx_dac.c.o
 
 stm32f4xx_dac.i: stm32f4xx_dac.c.i
@@ -383,7 +383,7 @@ stm32f4xx_dac.i: stm32f4xx_dac.c.i
 
 # target to preprocess a source file
 stm32f4xx_dac.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dac.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dac.c.i
 .PHONY : stm32f4xx_dac.c.i
 
 stm32f4xx_dac.s: stm32f4xx_dac.c.s
@@ -392,7 +392,7 @@ stm32f4xx_dac.s: stm32f4xx_dac.c.s
 
 # target to generate assembly for a file
 stm32f4xx_dac.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dac.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dac.c.s
 .PHONY : stm32f4xx_dac.c.s
 
 stm32f4xx_dbgmcu.o: stm32f4xx_dbgmcu.c.o
@@ -401,7 +401,7 @@ stm32f4xx_dbgmcu.o: stm32f4xx_dbgmcu.c.o
 
 # target to build an object file
 stm32f4xx_dbgmcu.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dbgmcu.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dbgmcu.c.o
 .PHONY : stm32f4xx_dbgmcu.c.o
 
 stm32f4xx_dbgmcu.i: stm32f4xx_dbgmcu.c.i
@@ -410,7 +410,7 @@ stm32f4xx_dbgmcu.i: stm32f4xx_dbgmcu.c.i
 
 # target to preprocess a source file
 stm32f4xx_dbgmcu.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dbgmcu.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dbgmcu.c.i
 .PHONY : stm32f4xx_dbgmcu.c.i
 
 stm32f4xx_dbgmcu.s: stm32f4xx_dbgmcu.c.s
@@ -419,7 +419,7 @@ stm32f4xx_dbgmcu.s: stm32f4xx_dbgmcu.c.s
 
 # target to generate assembly for a file
 stm32f4xx_dbgmcu.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dbgmcu.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dbgmcu.c.s
 .PHONY : stm32f4xx_dbgmcu.c.s
 
 stm32f4xx_dcmi.o: stm32f4xx_dcmi.c.o
@@ -428,7 +428,7 @@ stm32f4xx_dcmi.o: stm32f4xx_dcmi.c.o
 
 # target to build an object file
 stm32f4xx_dcmi.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dcmi.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dcmi.c.o
 .PHONY : stm32f4xx_dcmi.c.o
 
 stm32f4xx_dcmi.i: stm32f4xx_dcmi.c.i
@@ -437,7 +437,7 @@ stm32f4xx_dcmi.i: stm32f4xx_dcmi.c.i
 
 # target to preprocess a source file
 stm32f4xx_dcmi.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dcmi.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dcmi.c.i
 .PHONY : stm32f4xx_dcmi.c.i
 
 stm32f4xx_dcmi.s: stm32f4xx_dcmi.c.s
@@ -446,7 +446,7 @@ stm32f4xx_dcmi.s: stm32f4xx_dcmi.c.s
 
 # target to generate assembly for a file
 stm32f4xx_dcmi.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dcmi.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dcmi.c.s
 .PHONY : stm32f4xx_dcmi.c.s
 
 stm32f4xx_dfsdm.o: stm32f4xx_dfsdm.c.o
@@ -455,7 +455,7 @@ stm32f4xx_dfsdm.o: stm32f4xx_dfsdm.c.o
 
 # target to build an object file
 stm32f4xx_dfsdm.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dfsdm.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dfsdm.c.o
 .PHONY : stm32f4xx_dfsdm.c.o
 
 stm32f4xx_dfsdm.i: stm32f4xx_dfsdm.c.i
@@ -464,7 +464,7 @@ stm32f4xx_dfsdm.i: stm32f4xx_dfsdm.c.i
 
 # target to preprocess a source file
 stm32f4xx_dfsdm.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dfsdm.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dfsdm.c.i
 .PHONY : stm32f4xx_dfsdm.c.i
 
 stm32f4xx_dfsdm.s: stm32f4xx_dfsdm.c.s
@@ -473,7 +473,7 @@ stm32f4xx_dfsdm.s: stm32f4xx_dfsdm.c.s
 
 # target to generate assembly for a file
 stm32f4xx_dfsdm.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dfsdm.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dfsdm.c.s
 .PHONY : stm32f4xx_dfsdm.c.s
 
 stm32f4xx_dma.o: stm32f4xx_dma.c.o
@@ -482,7 +482,7 @@ stm32f4xx_dma.o: stm32f4xx_dma.c.o
 
 # target to build an object file
 stm32f4xx_dma.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dma.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dma.c.o
 .PHONY : stm32f4xx_dma.c.o
 
 stm32f4xx_dma.i: stm32f4xx_dma.c.i
@@ -491,7 +491,7 @@ stm32f4xx_dma.i: stm32f4xx_dma.c.i
 
 # target to preprocess a source file
 stm32f4xx_dma.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dma.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dma.c.i
 .PHONY : stm32f4xx_dma.c.i
 
 stm32f4xx_dma.s: stm32f4xx_dma.c.s
@@ -500,7 +500,7 @@ stm32f4xx_dma.s: stm32f4xx_dma.c.s
 
 # target to generate assembly for a file
 stm32f4xx_dma.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dma.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dma.c.s
 .PHONY : stm32f4xx_dma.c.s
 
 stm32f4xx_dma2d.o: stm32f4xx_dma2d.c.o
@@ -509,7 +509,7 @@ stm32f4xx_dma2d.o: stm32f4xx_dma2d.c.o
 
 # target to build an object file
 stm32f4xx_dma2d.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dma2d.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dma2d.c.o
 .PHONY : stm32f4xx_dma2d.c.o
 
 stm32f4xx_dma2d.i: stm32f4xx_dma2d.c.i
@@ -518,7 +518,7 @@ stm32f4xx_dma2d.i: stm32f4xx_dma2d.c.i
 
 # target to preprocess a source file
 stm32f4xx_dma2d.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dma2d.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dma2d.c.i
 .PHONY : stm32f4xx_dma2d.c.i
 
 stm32f4xx_dma2d.s: stm32f4xx_dma2d.c.s
@@ -527,7 +527,7 @@ stm32f4xx_dma2d.s: stm32f4xx_dma2d.c.s
 
 # target to generate assembly for a file
 stm32f4xx_dma2d.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dma2d.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dma2d.c.s
 .PHONY : stm32f4xx_dma2d.c.s
 
 stm32f4xx_dsi.o: stm32f4xx_dsi.c.o
@@ -536,7 +536,7 @@ stm32f4xx_dsi.o: stm32f4xx_dsi.c.o
 
 # target to build an object file
 stm32f4xx_dsi.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dsi.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dsi.c.o
 .PHONY : stm32f4xx_dsi.c.o
 
 stm32f4xx_dsi.i: stm32f4xx_dsi.c.i
@@ -545,7 +545,7 @@ stm32f4xx_dsi.i: stm32f4xx_dsi.c.i
 
 # target to preprocess a source file
 stm32f4xx_dsi.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dsi.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dsi.c.i
 .PHONY : stm32f4xx_dsi.c.i
 
 stm32f4xx_dsi.s: stm32f4xx_dsi.c.s
@@ -554,7 +554,7 @@ stm32f4xx_dsi.s: stm32f4xx_dsi.c.s
 
 # target to generate assembly for a file
 stm32f4xx_dsi.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dsi.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_dsi.c.s
 .PHONY : stm32f4xx_dsi.c.s
 
 stm32f4xx_exti.o: stm32f4xx_exti.c.o
@@ -563,7 +563,7 @@ stm32f4xx_exti.o: stm32f4xx_exti.c.o
 
 # target to build an object file
 stm32f4xx_exti.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_exti.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_exti.c.o
 .PHONY : stm32f4xx_exti.c.o
 
 stm32f4xx_exti.i: stm32f4xx_exti.c.i
@@ -572,7 +572,7 @@ stm32f4xx_exti.i: stm32f4xx_exti.c.i
 
 # target to preprocess a source file
 stm32f4xx_exti.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_exti.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_exti.c.i
 .PHONY : stm32f4xx_exti.c.i
 
 stm32f4xx_exti.s: stm32f4xx_exti.c.s
@@ -581,7 +581,7 @@ stm32f4xx_exti.s: stm32f4xx_exti.c.s
 
 # target to generate assembly for a file
 stm32f4xx_exti.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_exti.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_exti.c.s
 .PHONY : stm32f4xx_exti.c.s
 
 stm32f4xx_flash.o: stm32f4xx_flash.c.o
@@ -590,7 +590,7 @@ stm32f4xx_flash.o: stm32f4xx_flash.c.o
 
 # target to build an object file
 stm32f4xx_flash.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_flash.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_flash.c.o
 .PHONY : stm32f4xx_flash.c.o
 
 stm32f4xx_flash.i: stm32f4xx_flash.c.i
@@ -599,7 +599,7 @@ stm32f4xx_flash.i: stm32f4xx_flash.c.i
 
 # target to preprocess a source file
 stm32f4xx_flash.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_flash.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_flash.c.i
 .PHONY : stm32f4xx_flash.c.i
 
 stm32f4xx_flash.s: stm32f4xx_flash.c.s
@@ -608,7 +608,7 @@ stm32f4xx_flash.s: stm32f4xx_flash.c.s
 
 # target to generate assembly for a file
 stm32f4xx_flash.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_flash.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_flash.c.s
 .PHONY : stm32f4xx_flash.c.s
 
 stm32f4xx_flash_ramfunc.o: stm32f4xx_flash_ramfunc.c.o
@@ -617,7 +617,7 @@ stm32f4xx_flash_ramfunc.o: stm32f4xx_flash_ramfunc.c.o
 
 # target to build an object file
 stm32f4xx_flash_ramfunc.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_flash_ramfunc.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_flash_ramfunc.c.o
 .PHONY : stm32f4xx_flash_ramfunc.c.o
 
 stm32f4xx_flash_ramfunc.i: stm32f4xx_flash_ramfunc.c.i
@@ -626,7 +626,7 @@ stm32f4xx_flash_ramfunc.i: stm32f4xx_flash_ramfunc.c.i
 
 # target to preprocess a source file
 stm32f4xx_flash_ramfunc.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_flash_ramfunc.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_flash_ramfunc.c.i
 .PHONY : stm32f4xx_flash_ramfunc.c.i
 
 stm32f4xx_flash_ramfunc.s: stm32f4xx_flash_ramfunc.c.s
@@ -635,35 +635,8 @@ stm32f4xx_flash_ramfunc.s: stm32f4xx_flash_ramfunc.c.s
 
 # target to generate assembly for a file
 stm32f4xx_flash_ramfunc.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_flash_ramfunc.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_flash_ramfunc.c.s
 .PHONY : stm32f4xx_flash_ramfunc.c.s
-
-stm32f4xx_fmc.o: stm32f4xx_fmc.c.o
-
-.PHONY : stm32f4xx_fmc.o
-
-# target to build an object file
-stm32f4xx_fmc.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_fmc.c.o
-.PHONY : stm32f4xx_fmc.c.o
-
-stm32f4xx_fmc.i: stm32f4xx_fmc.c.i
-
-.PHONY : stm32f4xx_fmc.i
-
-# target to preprocess a source file
-stm32f4xx_fmc.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_fmc.c.i
-.PHONY : stm32f4xx_fmc.c.i
-
-stm32f4xx_fmc.s: stm32f4xx_fmc.c.s
-
-.PHONY : stm32f4xx_fmc.s
-
-# target to generate assembly for a file
-stm32f4xx_fmc.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_fmc.c.s
-.PHONY : stm32f4xx_fmc.c.s
 
 stm32f4xx_fmpi2c.o: stm32f4xx_fmpi2c.c.o
 
@@ -671,7 +644,7 @@ stm32f4xx_fmpi2c.o: stm32f4xx_fmpi2c.c.o
 
 # target to build an object file
 stm32f4xx_fmpi2c.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_fmpi2c.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_fmpi2c.c.o
 .PHONY : stm32f4xx_fmpi2c.c.o
 
 stm32f4xx_fmpi2c.i: stm32f4xx_fmpi2c.c.i
@@ -680,7 +653,7 @@ stm32f4xx_fmpi2c.i: stm32f4xx_fmpi2c.c.i
 
 # target to preprocess a source file
 stm32f4xx_fmpi2c.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_fmpi2c.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_fmpi2c.c.i
 .PHONY : stm32f4xx_fmpi2c.c.i
 
 stm32f4xx_fmpi2c.s: stm32f4xx_fmpi2c.c.s
@@ -689,35 +662,8 @@ stm32f4xx_fmpi2c.s: stm32f4xx_fmpi2c.c.s
 
 # target to generate assembly for a file
 stm32f4xx_fmpi2c.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_fmpi2c.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_fmpi2c.c.s
 .PHONY : stm32f4xx_fmpi2c.c.s
-
-stm32f4xx_fsmc.o: stm32f4xx_fsmc.c.o
-
-.PHONY : stm32f4xx_fsmc.o
-
-# target to build an object file
-stm32f4xx_fsmc.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_fsmc.c.o
-.PHONY : stm32f4xx_fsmc.c.o
-
-stm32f4xx_fsmc.i: stm32f4xx_fsmc.c.i
-
-.PHONY : stm32f4xx_fsmc.i
-
-# target to preprocess a source file
-stm32f4xx_fsmc.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_fsmc.c.i
-.PHONY : stm32f4xx_fsmc.c.i
-
-stm32f4xx_fsmc.s: stm32f4xx_fsmc.c.s
-
-.PHONY : stm32f4xx_fsmc.s
-
-# target to generate assembly for a file
-stm32f4xx_fsmc.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_fsmc.c.s
-.PHONY : stm32f4xx_fsmc.c.s
 
 stm32f4xx_gpio.o: stm32f4xx_gpio.c.o
 
@@ -725,7 +671,7 @@ stm32f4xx_gpio.o: stm32f4xx_gpio.c.o
 
 # target to build an object file
 stm32f4xx_gpio.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_gpio.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_gpio.c.o
 .PHONY : stm32f4xx_gpio.c.o
 
 stm32f4xx_gpio.i: stm32f4xx_gpio.c.i
@@ -734,7 +680,7 @@ stm32f4xx_gpio.i: stm32f4xx_gpio.c.i
 
 # target to preprocess a source file
 stm32f4xx_gpio.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_gpio.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_gpio.c.i
 .PHONY : stm32f4xx_gpio.c.i
 
 stm32f4xx_gpio.s: stm32f4xx_gpio.c.s
@@ -743,7 +689,7 @@ stm32f4xx_gpio.s: stm32f4xx_gpio.c.s
 
 # target to generate assembly for a file
 stm32f4xx_gpio.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_gpio.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_gpio.c.s
 .PHONY : stm32f4xx_gpio.c.s
 
 stm32f4xx_hash.o: stm32f4xx_hash.c.o
@@ -752,7 +698,7 @@ stm32f4xx_hash.o: stm32f4xx_hash.c.o
 
 # target to build an object file
 stm32f4xx_hash.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash.c.o
 .PHONY : stm32f4xx_hash.c.o
 
 stm32f4xx_hash.i: stm32f4xx_hash.c.i
@@ -761,7 +707,7 @@ stm32f4xx_hash.i: stm32f4xx_hash.c.i
 
 # target to preprocess a source file
 stm32f4xx_hash.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash.c.i
 .PHONY : stm32f4xx_hash.c.i
 
 stm32f4xx_hash.s: stm32f4xx_hash.c.s
@@ -770,7 +716,7 @@ stm32f4xx_hash.s: stm32f4xx_hash.c.s
 
 # target to generate assembly for a file
 stm32f4xx_hash.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash.c.s
 .PHONY : stm32f4xx_hash.c.s
 
 stm32f4xx_hash_md5.o: stm32f4xx_hash_md5.c.o
@@ -779,7 +725,7 @@ stm32f4xx_hash_md5.o: stm32f4xx_hash_md5.c.o
 
 # target to build an object file
 stm32f4xx_hash_md5.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash_md5.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash_md5.c.o
 .PHONY : stm32f4xx_hash_md5.c.o
 
 stm32f4xx_hash_md5.i: stm32f4xx_hash_md5.c.i
@@ -788,7 +734,7 @@ stm32f4xx_hash_md5.i: stm32f4xx_hash_md5.c.i
 
 # target to preprocess a source file
 stm32f4xx_hash_md5.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash_md5.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash_md5.c.i
 .PHONY : stm32f4xx_hash_md5.c.i
 
 stm32f4xx_hash_md5.s: stm32f4xx_hash_md5.c.s
@@ -797,7 +743,7 @@ stm32f4xx_hash_md5.s: stm32f4xx_hash_md5.c.s
 
 # target to generate assembly for a file
 stm32f4xx_hash_md5.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash_md5.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash_md5.c.s
 .PHONY : stm32f4xx_hash_md5.c.s
 
 stm32f4xx_hash_sha1.o: stm32f4xx_hash_sha1.c.o
@@ -806,7 +752,7 @@ stm32f4xx_hash_sha1.o: stm32f4xx_hash_sha1.c.o
 
 # target to build an object file
 stm32f4xx_hash_sha1.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash_sha1.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash_sha1.c.o
 .PHONY : stm32f4xx_hash_sha1.c.o
 
 stm32f4xx_hash_sha1.i: stm32f4xx_hash_sha1.c.i
@@ -815,7 +761,7 @@ stm32f4xx_hash_sha1.i: stm32f4xx_hash_sha1.c.i
 
 # target to preprocess a source file
 stm32f4xx_hash_sha1.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash_sha1.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash_sha1.c.i
 .PHONY : stm32f4xx_hash_sha1.c.i
 
 stm32f4xx_hash_sha1.s: stm32f4xx_hash_sha1.c.s
@@ -824,7 +770,7 @@ stm32f4xx_hash_sha1.s: stm32f4xx_hash_sha1.c.s
 
 # target to generate assembly for a file
 stm32f4xx_hash_sha1.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash_sha1.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_hash_sha1.c.s
 .PHONY : stm32f4xx_hash_sha1.c.s
 
 stm32f4xx_i2c.o: stm32f4xx_i2c.c.o
@@ -833,7 +779,7 @@ stm32f4xx_i2c.o: stm32f4xx_i2c.c.o
 
 # target to build an object file
 stm32f4xx_i2c.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_i2c.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_i2c.c.o
 .PHONY : stm32f4xx_i2c.c.o
 
 stm32f4xx_i2c.i: stm32f4xx_i2c.c.i
@@ -842,7 +788,7 @@ stm32f4xx_i2c.i: stm32f4xx_i2c.c.i
 
 # target to preprocess a source file
 stm32f4xx_i2c.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_i2c.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_i2c.c.i
 .PHONY : stm32f4xx_i2c.c.i
 
 stm32f4xx_i2c.s: stm32f4xx_i2c.c.s
@@ -851,7 +797,7 @@ stm32f4xx_i2c.s: stm32f4xx_i2c.c.s
 
 # target to generate assembly for a file
 stm32f4xx_i2c.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_i2c.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_i2c.c.s
 .PHONY : stm32f4xx_i2c.c.s
 
 stm32f4xx_iwdg.o: stm32f4xx_iwdg.c.o
@@ -860,7 +806,7 @@ stm32f4xx_iwdg.o: stm32f4xx_iwdg.c.o
 
 # target to build an object file
 stm32f4xx_iwdg.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_iwdg.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_iwdg.c.o
 .PHONY : stm32f4xx_iwdg.c.o
 
 stm32f4xx_iwdg.i: stm32f4xx_iwdg.c.i
@@ -869,7 +815,7 @@ stm32f4xx_iwdg.i: stm32f4xx_iwdg.c.i
 
 # target to preprocess a source file
 stm32f4xx_iwdg.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_iwdg.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_iwdg.c.i
 .PHONY : stm32f4xx_iwdg.c.i
 
 stm32f4xx_iwdg.s: stm32f4xx_iwdg.c.s
@@ -878,7 +824,7 @@ stm32f4xx_iwdg.s: stm32f4xx_iwdg.c.s
 
 # target to generate assembly for a file
 stm32f4xx_iwdg.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_iwdg.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_iwdg.c.s
 .PHONY : stm32f4xx_iwdg.c.s
 
 stm32f4xx_lptim.o: stm32f4xx_lptim.c.o
@@ -887,7 +833,7 @@ stm32f4xx_lptim.o: stm32f4xx_lptim.c.o
 
 # target to build an object file
 stm32f4xx_lptim.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_lptim.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_lptim.c.o
 .PHONY : stm32f4xx_lptim.c.o
 
 stm32f4xx_lptim.i: stm32f4xx_lptim.c.i
@@ -896,7 +842,7 @@ stm32f4xx_lptim.i: stm32f4xx_lptim.c.i
 
 # target to preprocess a source file
 stm32f4xx_lptim.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_lptim.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_lptim.c.i
 .PHONY : stm32f4xx_lptim.c.i
 
 stm32f4xx_lptim.s: stm32f4xx_lptim.c.s
@@ -905,7 +851,7 @@ stm32f4xx_lptim.s: stm32f4xx_lptim.c.s
 
 # target to generate assembly for a file
 stm32f4xx_lptim.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_lptim.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_lptim.c.s
 .PHONY : stm32f4xx_lptim.c.s
 
 stm32f4xx_ltdc.o: stm32f4xx_ltdc.c.o
@@ -914,7 +860,7 @@ stm32f4xx_ltdc.o: stm32f4xx_ltdc.c.o
 
 # target to build an object file
 stm32f4xx_ltdc.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_ltdc.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_ltdc.c.o
 .PHONY : stm32f4xx_ltdc.c.o
 
 stm32f4xx_ltdc.i: stm32f4xx_ltdc.c.i
@@ -923,7 +869,7 @@ stm32f4xx_ltdc.i: stm32f4xx_ltdc.c.i
 
 # target to preprocess a source file
 stm32f4xx_ltdc.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_ltdc.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_ltdc.c.i
 .PHONY : stm32f4xx_ltdc.c.i
 
 stm32f4xx_ltdc.s: stm32f4xx_ltdc.c.s
@@ -932,7 +878,7 @@ stm32f4xx_ltdc.s: stm32f4xx_ltdc.c.s
 
 # target to generate assembly for a file
 stm32f4xx_ltdc.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_ltdc.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_ltdc.c.s
 .PHONY : stm32f4xx_ltdc.c.s
 
 stm32f4xx_pwr.o: stm32f4xx_pwr.c.o
@@ -941,7 +887,7 @@ stm32f4xx_pwr.o: stm32f4xx_pwr.c.o
 
 # target to build an object file
 stm32f4xx_pwr.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_pwr.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_pwr.c.o
 .PHONY : stm32f4xx_pwr.c.o
 
 stm32f4xx_pwr.i: stm32f4xx_pwr.c.i
@@ -950,7 +896,7 @@ stm32f4xx_pwr.i: stm32f4xx_pwr.c.i
 
 # target to preprocess a source file
 stm32f4xx_pwr.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_pwr.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_pwr.c.i
 .PHONY : stm32f4xx_pwr.c.i
 
 stm32f4xx_pwr.s: stm32f4xx_pwr.c.s
@@ -959,7 +905,7 @@ stm32f4xx_pwr.s: stm32f4xx_pwr.c.s
 
 # target to generate assembly for a file
 stm32f4xx_pwr.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_pwr.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_pwr.c.s
 .PHONY : stm32f4xx_pwr.c.s
 
 stm32f4xx_qspi.o: stm32f4xx_qspi.c.o
@@ -968,7 +914,7 @@ stm32f4xx_qspi.o: stm32f4xx_qspi.c.o
 
 # target to build an object file
 stm32f4xx_qspi.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_qspi.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_qspi.c.o
 .PHONY : stm32f4xx_qspi.c.o
 
 stm32f4xx_qspi.i: stm32f4xx_qspi.c.i
@@ -977,7 +923,7 @@ stm32f4xx_qspi.i: stm32f4xx_qspi.c.i
 
 # target to preprocess a source file
 stm32f4xx_qspi.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_qspi.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_qspi.c.i
 .PHONY : stm32f4xx_qspi.c.i
 
 stm32f4xx_qspi.s: stm32f4xx_qspi.c.s
@@ -986,7 +932,7 @@ stm32f4xx_qspi.s: stm32f4xx_qspi.c.s
 
 # target to generate assembly for a file
 stm32f4xx_qspi.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_qspi.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_qspi.c.s
 .PHONY : stm32f4xx_qspi.c.s
 
 stm32f4xx_rcc.o: stm32f4xx_rcc.c.o
@@ -995,7 +941,7 @@ stm32f4xx_rcc.o: stm32f4xx_rcc.c.o
 
 # target to build an object file
 stm32f4xx_rcc.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rcc.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rcc.c.o
 .PHONY : stm32f4xx_rcc.c.o
 
 stm32f4xx_rcc.i: stm32f4xx_rcc.c.i
@@ -1004,7 +950,7 @@ stm32f4xx_rcc.i: stm32f4xx_rcc.c.i
 
 # target to preprocess a source file
 stm32f4xx_rcc.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rcc.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rcc.c.i
 .PHONY : stm32f4xx_rcc.c.i
 
 stm32f4xx_rcc.s: stm32f4xx_rcc.c.s
@@ -1013,7 +959,7 @@ stm32f4xx_rcc.s: stm32f4xx_rcc.c.s
 
 # target to generate assembly for a file
 stm32f4xx_rcc.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rcc.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rcc.c.s
 .PHONY : stm32f4xx_rcc.c.s
 
 stm32f4xx_rng.o: stm32f4xx_rng.c.o
@@ -1022,7 +968,7 @@ stm32f4xx_rng.o: stm32f4xx_rng.c.o
 
 # target to build an object file
 stm32f4xx_rng.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rng.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rng.c.o
 .PHONY : stm32f4xx_rng.c.o
 
 stm32f4xx_rng.i: stm32f4xx_rng.c.i
@@ -1031,7 +977,7 @@ stm32f4xx_rng.i: stm32f4xx_rng.c.i
 
 # target to preprocess a source file
 stm32f4xx_rng.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rng.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rng.c.i
 .PHONY : stm32f4xx_rng.c.i
 
 stm32f4xx_rng.s: stm32f4xx_rng.c.s
@@ -1040,7 +986,7 @@ stm32f4xx_rng.s: stm32f4xx_rng.c.s
 
 # target to generate assembly for a file
 stm32f4xx_rng.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rng.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rng.c.s
 .PHONY : stm32f4xx_rng.c.s
 
 stm32f4xx_rtc.o: stm32f4xx_rtc.c.o
@@ -1049,7 +995,7 @@ stm32f4xx_rtc.o: stm32f4xx_rtc.c.o
 
 # target to build an object file
 stm32f4xx_rtc.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rtc.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rtc.c.o
 .PHONY : stm32f4xx_rtc.c.o
 
 stm32f4xx_rtc.i: stm32f4xx_rtc.c.i
@@ -1058,7 +1004,7 @@ stm32f4xx_rtc.i: stm32f4xx_rtc.c.i
 
 # target to preprocess a source file
 stm32f4xx_rtc.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rtc.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rtc.c.i
 .PHONY : stm32f4xx_rtc.c.i
 
 stm32f4xx_rtc.s: stm32f4xx_rtc.c.s
@@ -1067,7 +1013,7 @@ stm32f4xx_rtc.s: stm32f4xx_rtc.c.s
 
 # target to generate assembly for a file
 stm32f4xx_rtc.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rtc.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_rtc.c.s
 .PHONY : stm32f4xx_rtc.c.s
 
 stm32f4xx_sai.o: stm32f4xx_sai.c.o
@@ -1076,7 +1022,7 @@ stm32f4xx_sai.o: stm32f4xx_sai.c.o
 
 # target to build an object file
 stm32f4xx_sai.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_sai.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_sai.c.o
 .PHONY : stm32f4xx_sai.c.o
 
 stm32f4xx_sai.i: stm32f4xx_sai.c.i
@@ -1085,7 +1031,7 @@ stm32f4xx_sai.i: stm32f4xx_sai.c.i
 
 # target to preprocess a source file
 stm32f4xx_sai.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_sai.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_sai.c.i
 .PHONY : stm32f4xx_sai.c.i
 
 stm32f4xx_sai.s: stm32f4xx_sai.c.s
@@ -1094,7 +1040,7 @@ stm32f4xx_sai.s: stm32f4xx_sai.c.s
 
 # target to generate assembly for a file
 stm32f4xx_sai.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_sai.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_sai.c.s
 .PHONY : stm32f4xx_sai.c.s
 
 stm32f4xx_sdio.o: stm32f4xx_sdio.c.o
@@ -1103,7 +1049,7 @@ stm32f4xx_sdio.o: stm32f4xx_sdio.c.o
 
 # target to build an object file
 stm32f4xx_sdio.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_sdio.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_sdio.c.o
 .PHONY : stm32f4xx_sdio.c.o
 
 stm32f4xx_sdio.i: stm32f4xx_sdio.c.i
@@ -1112,7 +1058,7 @@ stm32f4xx_sdio.i: stm32f4xx_sdio.c.i
 
 # target to preprocess a source file
 stm32f4xx_sdio.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_sdio.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_sdio.c.i
 .PHONY : stm32f4xx_sdio.c.i
 
 stm32f4xx_sdio.s: stm32f4xx_sdio.c.s
@@ -1121,7 +1067,7 @@ stm32f4xx_sdio.s: stm32f4xx_sdio.c.s
 
 # target to generate assembly for a file
 stm32f4xx_sdio.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_sdio.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_sdio.c.s
 .PHONY : stm32f4xx_sdio.c.s
 
 stm32f4xx_spdifrx.o: stm32f4xx_spdifrx.c.o
@@ -1130,7 +1076,7 @@ stm32f4xx_spdifrx.o: stm32f4xx_spdifrx.c.o
 
 # target to build an object file
 stm32f4xx_spdifrx.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_spdifrx.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_spdifrx.c.o
 .PHONY : stm32f4xx_spdifrx.c.o
 
 stm32f4xx_spdifrx.i: stm32f4xx_spdifrx.c.i
@@ -1139,7 +1085,7 @@ stm32f4xx_spdifrx.i: stm32f4xx_spdifrx.c.i
 
 # target to preprocess a source file
 stm32f4xx_spdifrx.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_spdifrx.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_spdifrx.c.i
 .PHONY : stm32f4xx_spdifrx.c.i
 
 stm32f4xx_spdifrx.s: stm32f4xx_spdifrx.c.s
@@ -1148,7 +1094,7 @@ stm32f4xx_spdifrx.s: stm32f4xx_spdifrx.c.s
 
 # target to generate assembly for a file
 stm32f4xx_spdifrx.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_spdifrx.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_spdifrx.c.s
 .PHONY : stm32f4xx_spdifrx.c.s
 
 stm32f4xx_spi.o: stm32f4xx_spi.c.o
@@ -1157,7 +1103,7 @@ stm32f4xx_spi.o: stm32f4xx_spi.c.o
 
 # target to build an object file
 stm32f4xx_spi.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_spi.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_spi.c.o
 .PHONY : stm32f4xx_spi.c.o
 
 stm32f4xx_spi.i: stm32f4xx_spi.c.i
@@ -1166,7 +1112,7 @@ stm32f4xx_spi.i: stm32f4xx_spi.c.i
 
 # target to preprocess a source file
 stm32f4xx_spi.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_spi.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_spi.c.i
 .PHONY : stm32f4xx_spi.c.i
 
 stm32f4xx_spi.s: stm32f4xx_spi.c.s
@@ -1175,7 +1121,7 @@ stm32f4xx_spi.s: stm32f4xx_spi.c.s
 
 # target to generate assembly for a file
 stm32f4xx_spi.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_spi.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_spi.c.s
 .PHONY : stm32f4xx_spi.c.s
 
 stm32f4xx_syscfg.o: stm32f4xx_syscfg.c.o
@@ -1184,7 +1130,7 @@ stm32f4xx_syscfg.o: stm32f4xx_syscfg.c.o
 
 # target to build an object file
 stm32f4xx_syscfg.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_syscfg.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_syscfg.c.o
 .PHONY : stm32f4xx_syscfg.c.o
 
 stm32f4xx_syscfg.i: stm32f4xx_syscfg.c.i
@@ -1193,7 +1139,7 @@ stm32f4xx_syscfg.i: stm32f4xx_syscfg.c.i
 
 # target to preprocess a source file
 stm32f4xx_syscfg.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_syscfg.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_syscfg.c.i
 .PHONY : stm32f4xx_syscfg.c.i
 
 stm32f4xx_syscfg.s: stm32f4xx_syscfg.c.s
@@ -1202,7 +1148,7 @@ stm32f4xx_syscfg.s: stm32f4xx_syscfg.c.s
 
 # target to generate assembly for a file
 stm32f4xx_syscfg.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_syscfg.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_syscfg.c.s
 .PHONY : stm32f4xx_syscfg.c.s
 
 stm32f4xx_tim.o: stm32f4xx_tim.c.o
@@ -1211,7 +1157,7 @@ stm32f4xx_tim.o: stm32f4xx_tim.c.o
 
 # target to build an object file
 stm32f4xx_tim.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_tim.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_tim.c.o
 .PHONY : stm32f4xx_tim.c.o
 
 stm32f4xx_tim.i: stm32f4xx_tim.c.i
@@ -1220,7 +1166,7 @@ stm32f4xx_tim.i: stm32f4xx_tim.c.i
 
 # target to preprocess a source file
 stm32f4xx_tim.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_tim.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_tim.c.i
 .PHONY : stm32f4xx_tim.c.i
 
 stm32f4xx_tim.s: stm32f4xx_tim.c.s
@@ -1229,7 +1175,7 @@ stm32f4xx_tim.s: stm32f4xx_tim.c.s
 
 # target to generate assembly for a file
 stm32f4xx_tim.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_tim.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_tim.c.s
 .PHONY : stm32f4xx_tim.c.s
 
 stm32f4xx_usart.o: stm32f4xx_usart.c.o
@@ -1238,7 +1184,7 @@ stm32f4xx_usart.o: stm32f4xx_usart.c.o
 
 # target to build an object file
 stm32f4xx_usart.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_usart.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_usart.c.o
 .PHONY : stm32f4xx_usart.c.o
 
 stm32f4xx_usart.i: stm32f4xx_usart.c.i
@@ -1247,7 +1193,7 @@ stm32f4xx_usart.i: stm32f4xx_usart.c.i
 
 # target to preprocess a source file
 stm32f4xx_usart.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_usart.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_usart.c.i
 .PHONY : stm32f4xx_usart.c.i
 
 stm32f4xx_usart.s: stm32f4xx_usart.c.s
@@ -1256,7 +1202,7 @@ stm32f4xx_usart.s: stm32f4xx_usart.c.s
 
 # target to generate assembly for a file
 stm32f4xx_usart.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_usart.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_usart.c.s
 .PHONY : stm32f4xx_usart.c.s
 
 stm32f4xx_wwdg.o: stm32f4xx_wwdg.c.o
@@ -1265,7 +1211,7 @@ stm32f4xx_wwdg.o: stm32f4xx_wwdg.c.o
 
 # target to build an object file
 stm32f4xx_wwdg.c.o:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_wwdg.c.o
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_wwdg.c.o
 .PHONY : stm32f4xx_wwdg.c.o
 
 stm32f4xx_wwdg.i: stm32f4xx_wwdg.c.i
@@ -1274,7 +1220,7 @@ stm32f4xx_wwdg.i: stm32f4xx_wwdg.c.i
 
 # target to preprocess a source file
 stm32f4xx_wwdg.c.i:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_wwdg.c.i
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_wwdg.c.i
 .PHONY : stm32f4xx_wwdg.c.i
 
 stm32f4xx_wwdg.s: stm32f4xx_wwdg.c.s
@@ -1283,7 +1229,7 @@ stm32f4xx_wwdg.s: stm32f4xx_wwdg.c.s
 
 # target to generate assembly for a file
 stm32f4xx_wwdg.c.s:
-	cd /home/su/stm32/f405/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_wwdg.c.s
+	cd /home/su/stm32pro_linux/template/build && $(MAKE) -f stdlib/src/CMakeFiles/std.dir/build.make stdlib/src/CMakeFiles/std.dir/stm32f4xx_wwdg.c.s
 .PHONY : stm32f4xx_wwdg.c.s
 
 # Help Target
@@ -1352,15 +1298,9 @@ help:
 	@echo "... stm32f4xx_flash_ramfunc.o"
 	@echo "... stm32f4xx_flash_ramfunc.i"
 	@echo "... stm32f4xx_flash_ramfunc.s"
-	@echo "... stm32f4xx_fmc.o"
-	@echo "... stm32f4xx_fmc.i"
-	@echo "... stm32f4xx_fmc.s"
 	@echo "... stm32f4xx_fmpi2c.o"
 	@echo "... stm32f4xx_fmpi2c.i"
 	@echo "... stm32f4xx_fmpi2c.s"
-	@echo "... stm32f4xx_fsmc.o"
-	@echo "... stm32f4xx_fsmc.i"
-	@echo "... stm32f4xx_fsmc.s"
 	@echo "... stm32f4xx_gpio.o"
 	@echo "... stm32f4xx_gpio.i"
 	@echo "... stm32f4xx_gpio.s"
@@ -1435,6 +1375,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/su/stm32/f405/template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/su/stm32pro_linux/template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

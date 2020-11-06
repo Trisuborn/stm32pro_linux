@@ -1,4 +1,4 @@
-# Install script for directory: /home/su/stm32/f405/template
+# Install script for directory: /home/su/stm32pro_linux/template
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,12 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/su/stm32/f405/template/build/main/cmake_install.cmake")
+  include("/home/su/stm32pro_linux/template/build/main/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/su/stm32/f405/template/build/stdlib/src/cmake_install.cmake")
+  include("/home/su/stm32pro_linux/template/build/stdlib/src/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/su/stm32/f405/template/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/su/stm32pro_linux/template/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

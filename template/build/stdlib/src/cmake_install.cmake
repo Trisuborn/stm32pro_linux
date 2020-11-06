@@ -1,4 +1,4 @@
-# Install script for directory: /home/su/stm32/f405/template/stdlib/src
+# Install script for directory: /home/su/stm32pro_linux/template/stdlib/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
