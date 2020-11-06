@@ -1,0 +1,89 @@
+
+stm32f405_template.elf:     file format elf32-littlearm
+
+
+Disassembly of section .note.gnu.build-id:
+
+08000000 <.note.gnu.build-id>:
+ 8000000:	00000004 	andeq	r0, r0, r4
+ 8000004:	00000014 	andeq	r0, r0, r4, lsl r0
+ 8000008:	00000003 	andeq	r0, r0, r3
+ 800000c:	00554e47 	subseq	r4, r5, r7, asr #28
+ 8000010:	57720ebe 			; <UNDEFINED> instruction: 0x57720ebe
+ 8000014:	6fb2d101 	svcvs	0x00b2d101
+ 8000018:	03f5e93d 	mvnseq	lr, #999424	; 0xf4000
+ 800001c:	ce2b5ffd 	mcrgt	15, 1, r5, cr11, cr13, {7}
+ 8000020:	2396b8fe 	orrscs	fp, r6, #16646144	; 0xfe0000
+
+Disassembly of section .interp:
+
+08000024 <.interp>:
+ 8000024:	62696c2f 	rsbvs	r6, r9, #12032	; 0x2f00
+ 8000028:	2d646c2f 	stclcs	12, cr6, [r4, #-188]!	; 0xffffff44
+ 800002c:	756e696c 	strbvc	r6, [lr, #-2412]!	; 0xfffff694
+ 8000030:	72612d78 	rsbvc	r2, r1, #120, 26	; 0x1e00
+ 8000034:	2e66686d 	cdpcs	8, 6, cr6, cr6, cr13, {3}
+ 8000038:	332e6f73 			; <UNDEFINED> instruction: 0x332e6f73
+	...
+
+Disassembly of section .dynsym:
+
+08000040 <.dynsym>:
+	...
+
+Disassembly of section .dynstr:
+
+08000050 <.dynstr>:
+ 8000050:	62696c00 	rsbvs	r6, r9, #0, 24
+ 8000054:	6f732e63 	svcvs	0x00732e63
+ 8000058:	6c00362e 	stcvs	6, cr3, [r0], {46}	; 0x2e
+ 800005c:	696c2d64 	stmdbvs	ip!, {r2, r5, r6, r8, sl, fp, sp}^
+ 8000060:	2d78756e 	cfldr64cs	mvdx7, [r8, #-440]!	; 0xfffffe48
+ 8000064:	686d7261 	stmdavs	sp!, {r0, r5, r6, r9, ip, sp, lr}^
+ 8000068:	6f732e66 	svcvs	0x00732e66
+ 800006c:	Address 0x000000000800006c is out of bounds.
+
+
+Disassembly of section .gnu.hash:
+
+08000070 <.gnu.hash>:
+ 8000070:	00000001 	andeq	r0, r0, r1
+ 8000074:	00000001 	andeq	r0, r0, r1
+ 8000078:	00000001 	andeq	r0, r0, r1
+	...
+
+Disassembly of section .dynamic:
+
+20000000 <.dynamic>:
+20000000:	00000001 	andeq	r0, r0, r1
+20000004:	00000001 	andeq	r0, r0, r1
+20000008:	00000001 	andeq	r0, r0, r1
+2000000c:	0000000b 	andeq	r0, r0, fp
+20000010:	6ffffef5 	svcvs	0x00fffef5
+20000014:	08000070 	stmdaeq	r0, {r4, r5, r6}
+20000018:	00000005 	andeq	r0, r0, r5
+2000001c:	08000050 	stmdaeq	r0, {r4, r6}
+20000020:	00000006 	andeq	r0, r0, r6
+20000024:	08000040 	stmdaeq	r0, {r6}
+20000028:	0000000a 	andeq	r0, r0, sl
+2000002c:	0000001f 	andeq	r0, r0, pc, lsl r0
+20000030:	0000000b 	andeq	r0, r0, fp
+20000034:	00000010 	andeq	r0, r0, r0, lsl r0
+20000038:	00000015 	andeq	r0, r0, r5, lsl r0
+2000003c:	00000000 	andeq	r0, r0, r0
+20000040:	0000001e 	andeq	r0, r0, lr, lsl r0
+20000044:	00000008 	andeq	r0, r0, r8
+20000048:	6ffffffb 	svcvs	0x00fffffb
+2000004c:	08000001 	stmdaeq	r0, {r0}
+	...
+
+Disassembly of section .got.plt:
+
+20000080 <.got.plt>:
+20000080:	20000000 	andcs	r0, r0, r0
+	...
+
+Disassembly of section ._user_heap_stack:
+
+2000008c <._user_heap_stack>:
+	...

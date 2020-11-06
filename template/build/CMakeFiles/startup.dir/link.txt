@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libstartup.a  CMakeFiles/startup.dir/core/startup_stm32f40_41xxx.s.o
+/usr/bin/ranlib ../lib/libstartup.a
