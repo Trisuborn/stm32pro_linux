@@ -53,7 +53,8 @@ CMAKE_BINARY_DIR = /home/su/stm32pro_linux/template/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/stm32f405_template.elf.dir/all
+all: CMakeFiles/stm32f405rgt_template.elf.dir/all
+all: CMakeFiles/std.dir/all
 
 .PHONY : all
 
@@ -63,36 +64,64 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/stm32f405_template.elf.dir/clean
+clean: CMakeFiles/stm32f405rgt_template.elf.dir/clean
+clean: CMakeFiles/std.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/stm32f405_template.elf.dir
+# Target rules for target CMakeFiles/stm32f405rgt_template.elf.dir
 
 # All Build rule for target.
-CMakeFiles/stm32f405_template.elf.dir/all:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/depend
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/su/stm32pro_linux/template/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45 "Built target stm32f405_template.elf"
-.PHONY : CMakeFiles/stm32f405_template.elf.dir/all
+CMakeFiles/stm32f405rgt_template.elf.dir/all: CMakeFiles/std.dir/all
+	$(MAKE) -f CMakeFiles/stm32f405rgt_template.elf.dir/build.make CMakeFiles/stm32f405rgt_template.elf.dir/depend
+	$(MAKE) -f CMakeFiles/stm32f405rgt_template.elf.dir/build.make CMakeFiles/stm32f405rgt_template.elf.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/su/stm32pro_linux/template/build/CMakeFiles --progress-num=43,44,45,46,47 "Built target stm32f405rgt_template.elf"
+.PHONY : CMakeFiles/stm32f405rgt_template.elf.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/stm32f405_template.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/su/stm32pro_linux/template/build/CMakeFiles 45
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/stm32f405_template.elf.dir/all
+CMakeFiles/stm32f405rgt_template.elf.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/su/stm32pro_linux/template/build/CMakeFiles 47
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/stm32f405rgt_template.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/su/stm32pro_linux/template/build/CMakeFiles 0
-.PHONY : CMakeFiles/stm32f405_template.elf.dir/rule
+.PHONY : CMakeFiles/stm32f405rgt_template.elf.dir/rule
 
 # Convenience name for target.
-stm32f405_template.elf: CMakeFiles/stm32f405_template.elf.dir/rule
+stm32f405rgt_template.elf: CMakeFiles/stm32f405rgt_template.elf.dir/rule
 
-.PHONY : stm32f405_template.elf
+.PHONY : stm32f405rgt_template.elf
 
 # clean rule for target.
-CMakeFiles/stm32f405_template.elf.dir/clean:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/clean
-.PHONY : CMakeFiles/stm32f405_template.elf.dir/clean
+CMakeFiles/stm32f405rgt_template.elf.dir/clean:
+	$(MAKE) -f CMakeFiles/stm32f405rgt_template.elf.dir/build.make CMakeFiles/stm32f405rgt_template.elf.dir/clean
+.PHONY : CMakeFiles/stm32f405rgt_template.elf.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/std.dir
+
+# All Build rule for target.
+CMakeFiles/std.dir/all:
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/depend
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/su/stm32pro_linux/template/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42 "Built target std"
+.PHONY : CMakeFiles/std.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/std.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/su/stm32pro_linux/template/build/CMakeFiles 42
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/std.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/su/stm32pro_linux/template/build/CMakeFiles 0
+.PHONY : CMakeFiles/std.dir/rule
+
+# Convenience name for target.
+std: CMakeFiles/std.dir/rule
+
+.PHONY : std
+
+# clean rule for target.
+CMakeFiles/std.dir/clean:
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/clean
+.PHONY : CMakeFiles/std.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

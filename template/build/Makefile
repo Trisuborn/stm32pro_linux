@@ -111,44 +111,39 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named stm32f405_template.elf
+# Target rules for targets named stm32f405rgt_template.elf
 
 # Build rule for target.
-stm32f405_template.elf: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 stm32f405_template.elf
-.PHONY : stm32f405_template.elf
+stm32f405rgt_template.elf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 stm32f405rgt_template.elf
+.PHONY : stm32f405rgt_template.elf
 
 # fast build rule for target.
-stm32f405_template.elf/fast:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/build
-.PHONY : stm32f405_template.elf/fast
+stm32f405rgt_template.elf/fast:
+	$(MAKE) -f CMakeFiles/stm32f405rgt_template.elf.dir/build.make CMakeFiles/stm32f405rgt_template.elf.dir/build
+.PHONY : stm32f405rgt_template.elf/fast
 
-core/startup_stm32f40_41xxx.o: core/startup_stm32f40_41xxx.s.o
+#=============================================================================
+# Target rules for targets named std
 
-.PHONY : core/startup_stm32f40_41xxx.o
+# Build rule for target.
+std: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std
+.PHONY : std
+
+# fast build rule for target.
+std/fast:
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/build
+.PHONY : std/fast
+
+core/startup_stm32f40xx.o: core/startup_stm32f40xx.s.o
+
+.PHONY : core/startup_stm32f40xx.o
 
 # target to build an object file
-core/startup_stm32f40_41xxx.s.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/core/startup_stm32f40_41xxx.s.o
-.PHONY : core/startup_stm32f40_41xxx.s.o
-
-core/startup_stm32f40_41xxx.i: core/startup_stm32f40_41xxx.s.i
-
-.PHONY : core/startup_stm32f40_41xxx.i
-
-# target to preprocess a source file
-core/startup_stm32f40_41xxx.s.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/core/startup_stm32f40_41xxx.s.i
-.PHONY : core/startup_stm32f40_41xxx.s.i
-
-core/startup_stm32f40_41xxx.s: core/startup_stm32f40_41xxx.s.s
-
-.PHONY : core/startup_stm32f40_41xxx.s
-
-# target to generate assembly for a file
-core/startup_stm32f40_41xxx.s.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/core/startup_stm32f40_41xxx.s.s
-.PHONY : core/startup_stm32f40_41xxx.s.s
+core/startup_stm32f40xx.s.o:
+	$(MAKE) -f CMakeFiles/stm32f405rgt_template.elf.dir/build.make CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+.PHONY : core/startup_stm32f40xx.s.o
 
 main/main.o: main/main.c.o
 
@@ -156,7 +151,7 @@ main/main.o: main/main.c.o
 
 # target to build an object file
 main/main.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/main/main.c.o
+	$(MAKE) -f CMakeFiles/stm32f405rgt_template.elf.dir/build.make CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.o
 .PHONY : main/main.c.o
 
 main/main.i: main/main.c.i
@@ -165,7 +160,7 @@ main/main.i: main/main.c.i
 
 # target to preprocess a source file
 main/main.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/main/main.c.i
+	$(MAKE) -f CMakeFiles/stm32f405rgt_template.elf.dir/build.make CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.i
 .PHONY : main/main.c.i
 
 main/main.s: main/main.c.s
@@ -174,8 +169,62 @@ main/main.s: main/main.c.s
 
 # target to generate assembly for a file
 main/main.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/main/main.c.s
+	$(MAKE) -f CMakeFiles/stm32f405rgt_template.elf.dir/build.make CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.s
 .PHONY : main/main.c.s
+
+main/stm32f4xx_it.o: main/stm32f4xx_it.c.o
+
+.PHONY : main/stm32f4xx_it.o
+
+# target to build an object file
+main/stm32f4xx_it.c.o:
+	$(MAKE) -f CMakeFiles/stm32f405rgt_template.elf.dir/build.make CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+.PHONY : main/stm32f4xx_it.c.o
+
+main/stm32f4xx_it.i: main/stm32f4xx_it.c.i
+
+.PHONY : main/stm32f4xx_it.i
+
+# target to preprocess a source file
+main/stm32f4xx_it.c.i:
+	$(MAKE) -f CMakeFiles/stm32f405rgt_template.elf.dir/build.make CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.i
+.PHONY : main/stm32f4xx_it.c.i
+
+main/stm32f4xx_it.s: main/stm32f4xx_it.c.s
+
+.PHONY : main/stm32f4xx_it.s
+
+# target to generate assembly for a file
+main/stm32f4xx_it.c.s:
+	$(MAKE) -f CMakeFiles/stm32f405rgt_template.elf.dir/build.make CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.s
+.PHONY : main/stm32f4xx_it.c.s
+
+main/system_stm32f4xx.o: main/system_stm32f4xx.c.o
+
+.PHONY : main/system_stm32f4xx.o
+
+# target to build an object file
+main/system_stm32f4xx.c.o:
+	$(MAKE) -f CMakeFiles/stm32f405rgt_template.elf.dir/build.make CMakeFiles/stm32f405rgt_template.elf.dir/main/system_stm32f4xx.c.o
+.PHONY : main/system_stm32f4xx.c.o
+
+main/system_stm32f4xx.i: main/system_stm32f4xx.c.i
+
+.PHONY : main/system_stm32f4xx.i
+
+# target to preprocess a source file
+main/system_stm32f4xx.c.i:
+	$(MAKE) -f CMakeFiles/stm32f405rgt_template.elf.dir/build.make CMakeFiles/stm32f405rgt_template.elf.dir/main/system_stm32f4xx.c.i
+.PHONY : main/system_stm32f4xx.c.i
+
+main/system_stm32f4xx.s: main/system_stm32f4xx.c.s
+
+.PHONY : main/system_stm32f4xx.s
+
+# target to generate assembly for a file
+main/system_stm32f4xx.c.s:
+	$(MAKE) -f CMakeFiles/stm32f405rgt_template.elf.dir/build.make CMakeFiles/stm32f405rgt_template.elf.dir/main/system_stm32f4xx.c.s
+.PHONY : main/system_stm32f4xx.c.s
 
 stdlib/src/misc.o: stdlib/src/misc.c.o
 
@@ -183,7 +232,7 @@ stdlib/src/misc.o: stdlib/src/misc.c.o
 
 # target to build an object file
 stdlib/src/misc.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/misc.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/misc.c.o
 .PHONY : stdlib/src/misc.c.o
 
 stdlib/src/misc.i: stdlib/src/misc.c.i
@@ -192,7 +241,7 @@ stdlib/src/misc.i: stdlib/src/misc.c.i
 
 # target to preprocess a source file
 stdlib/src/misc.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/misc.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/misc.c.i
 .PHONY : stdlib/src/misc.c.i
 
 stdlib/src/misc.s: stdlib/src/misc.c.s
@@ -201,7 +250,7 @@ stdlib/src/misc.s: stdlib/src/misc.c.s
 
 # target to generate assembly for a file
 stdlib/src/misc.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/misc.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/misc.c.s
 .PHONY : stdlib/src/misc.c.s
 
 stdlib/src/stm32f4xx_adc.o: stdlib/src/stm32f4xx_adc.c.o
@@ -210,7 +259,7 @@ stdlib/src/stm32f4xx_adc.o: stdlib/src/stm32f4xx_adc.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_adc.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_adc.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_adc.c.o
 .PHONY : stdlib/src/stm32f4xx_adc.c.o
 
 stdlib/src/stm32f4xx_adc.i: stdlib/src/stm32f4xx_adc.c.i
@@ -219,7 +268,7 @@ stdlib/src/stm32f4xx_adc.i: stdlib/src/stm32f4xx_adc.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_adc.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_adc.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_adc.c.i
 .PHONY : stdlib/src/stm32f4xx_adc.c.i
 
 stdlib/src/stm32f4xx_adc.s: stdlib/src/stm32f4xx_adc.c.s
@@ -228,7 +277,7 @@ stdlib/src/stm32f4xx_adc.s: stdlib/src/stm32f4xx_adc.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_adc.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_adc.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_adc.c.s
 .PHONY : stdlib/src/stm32f4xx_adc.c.s
 
 stdlib/src/stm32f4xx_can.o: stdlib/src/stm32f4xx_can.c.o
@@ -237,7 +286,7 @@ stdlib/src/stm32f4xx_can.o: stdlib/src/stm32f4xx_can.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_can.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_can.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_can.c.o
 .PHONY : stdlib/src/stm32f4xx_can.c.o
 
 stdlib/src/stm32f4xx_can.i: stdlib/src/stm32f4xx_can.c.i
@@ -246,7 +295,7 @@ stdlib/src/stm32f4xx_can.i: stdlib/src/stm32f4xx_can.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_can.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_can.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_can.c.i
 .PHONY : stdlib/src/stm32f4xx_can.c.i
 
 stdlib/src/stm32f4xx_can.s: stdlib/src/stm32f4xx_can.c.s
@@ -255,7 +304,7 @@ stdlib/src/stm32f4xx_can.s: stdlib/src/stm32f4xx_can.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_can.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_can.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_can.c.s
 .PHONY : stdlib/src/stm32f4xx_can.c.s
 
 stdlib/src/stm32f4xx_cec.o: stdlib/src/stm32f4xx_cec.c.o
@@ -264,7 +313,7 @@ stdlib/src/stm32f4xx_cec.o: stdlib/src/stm32f4xx_cec.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_cec.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_cec.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_cec.c.o
 .PHONY : stdlib/src/stm32f4xx_cec.c.o
 
 stdlib/src/stm32f4xx_cec.i: stdlib/src/stm32f4xx_cec.c.i
@@ -273,7 +322,7 @@ stdlib/src/stm32f4xx_cec.i: stdlib/src/stm32f4xx_cec.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_cec.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_cec.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_cec.c.i
 .PHONY : stdlib/src/stm32f4xx_cec.c.i
 
 stdlib/src/stm32f4xx_cec.s: stdlib/src/stm32f4xx_cec.c.s
@@ -282,7 +331,7 @@ stdlib/src/stm32f4xx_cec.s: stdlib/src/stm32f4xx_cec.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_cec.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_cec.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_cec.c.s
 .PHONY : stdlib/src/stm32f4xx_cec.c.s
 
 stdlib/src/stm32f4xx_crc.o: stdlib/src/stm32f4xx_crc.c.o
@@ -291,7 +340,7 @@ stdlib/src/stm32f4xx_crc.o: stdlib/src/stm32f4xx_crc.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_crc.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_crc.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_crc.c.o
 .PHONY : stdlib/src/stm32f4xx_crc.c.o
 
 stdlib/src/stm32f4xx_crc.i: stdlib/src/stm32f4xx_crc.c.i
@@ -300,7 +349,7 @@ stdlib/src/stm32f4xx_crc.i: stdlib/src/stm32f4xx_crc.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_crc.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_crc.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_crc.c.i
 .PHONY : stdlib/src/stm32f4xx_crc.c.i
 
 stdlib/src/stm32f4xx_crc.s: stdlib/src/stm32f4xx_crc.c.s
@@ -309,7 +358,7 @@ stdlib/src/stm32f4xx_crc.s: stdlib/src/stm32f4xx_crc.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_crc.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_crc.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_crc.c.s
 .PHONY : stdlib/src/stm32f4xx_crc.c.s
 
 stdlib/src/stm32f4xx_cryp.o: stdlib/src/stm32f4xx_cryp.c.o
@@ -318,7 +367,7 @@ stdlib/src/stm32f4xx_cryp.o: stdlib/src/stm32f4xx_cryp.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_cryp.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_cryp.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp.c.o
 .PHONY : stdlib/src/stm32f4xx_cryp.c.o
 
 stdlib/src/stm32f4xx_cryp.i: stdlib/src/stm32f4xx_cryp.c.i
@@ -327,7 +376,7 @@ stdlib/src/stm32f4xx_cryp.i: stdlib/src/stm32f4xx_cryp.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_cryp.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_cryp.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp.c.i
 .PHONY : stdlib/src/stm32f4xx_cryp.c.i
 
 stdlib/src/stm32f4xx_cryp.s: stdlib/src/stm32f4xx_cryp.c.s
@@ -336,7 +385,7 @@ stdlib/src/stm32f4xx_cryp.s: stdlib/src/stm32f4xx_cryp.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_cryp.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_cryp.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp.c.s
 .PHONY : stdlib/src/stm32f4xx_cryp.c.s
 
 stdlib/src/stm32f4xx_cryp_aes.o: stdlib/src/stm32f4xx_cryp_aes.c.o
@@ -345,7 +394,7 @@ stdlib/src/stm32f4xx_cryp_aes.o: stdlib/src/stm32f4xx_cryp_aes.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_cryp_aes.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_cryp_aes.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_aes.c.o
 .PHONY : stdlib/src/stm32f4xx_cryp_aes.c.o
 
 stdlib/src/stm32f4xx_cryp_aes.i: stdlib/src/stm32f4xx_cryp_aes.c.i
@@ -354,7 +403,7 @@ stdlib/src/stm32f4xx_cryp_aes.i: stdlib/src/stm32f4xx_cryp_aes.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_cryp_aes.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_cryp_aes.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_aes.c.i
 .PHONY : stdlib/src/stm32f4xx_cryp_aes.c.i
 
 stdlib/src/stm32f4xx_cryp_aes.s: stdlib/src/stm32f4xx_cryp_aes.c.s
@@ -363,7 +412,7 @@ stdlib/src/stm32f4xx_cryp_aes.s: stdlib/src/stm32f4xx_cryp_aes.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_cryp_aes.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_cryp_aes.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_aes.c.s
 .PHONY : stdlib/src/stm32f4xx_cryp_aes.c.s
 
 stdlib/src/stm32f4xx_cryp_des.o: stdlib/src/stm32f4xx_cryp_des.c.o
@@ -372,7 +421,7 @@ stdlib/src/stm32f4xx_cryp_des.o: stdlib/src/stm32f4xx_cryp_des.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_cryp_des.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_cryp_des.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_des.c.o
 .PHONY : stdlib/src/stm32f4xx_cryp_des.c.o
 
 stdlib/src/stm32f4xx_cryp_des.i: stdlib/src/stm32f4xx_cryp_des.c.i
@@ -381,7 +430,7 @@ stdlib/src/stm32f4xx_cryp_des.i: stdlib/src/stm32f4xx_cryp_des.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_cryp_des.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_cryp_des.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_des.c.i
 .PHONY : stdlib/src/stm32f4xx_cryp_des.c.i
 
 stdlib/src/stm32f4xx_cryp_des.s: stdlib/src/stm32f4xx_cryp_des.c.s
@@ -390,7 +439,7 @@ stdlib/src/stm32f4xx_cryp_des.s: stdlib/src/stm32f4xx_cryp_des.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_cryp_des.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_cryp_des.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_des.c.s
 .PHONY : stdlib/src/stm32f4xx_cryp_des.c.s
 
 stdlib/src/stm32f4xx_cryp_tdes.o: stdlib/src/stm32f4xx_cryp_tdes.c.o
@@ -399,7 +448,7 @@ stdlib/src/stm32f4xx_cryp_tdes.o: stdlib/src/stm32f4xx_cryp_tdes.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_cryp_tdes.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_cryp_tdes.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_tdes.c.o
 .PHONY : stdlib/src/stm32f4xx_cryp_tdes.c.o
 
 stdlib/src/stm32f4xx_cryp_tdes.i: stdlib/src/stm32f4xx_cryp_tdes.c.i
@@ -408,7 +457,7 @@ stdlib/src/stm32f4xx_cryp_tdes.i: stdlib/src/stm32f4xx_cryp_tdes.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_cryp_tdes.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_cryp_tdes.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_tdes.c.i
 .PHONY : stdlib/src/stm32f4xx_cryp_tdes.c.i
 
 stdlib/src/stm32f4xx_cryp_tdes.s: stdlib/src/stm32f4xx_cryp_tdes.c.s
@@ -417,7 +466,7 @@ stdlib/src/stm32f4xx_cryp_tdes.s: stdlib/src/stm32f4xx_cryp_tdes.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_cryp_tdes.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_cryp_tdes.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_tdes.c.s
 .PHONY : stdlib/src/stm32f4xx_cryp_tdes.c.s
 
 stdlib/src/stm32f4xx_dac.o: stdlib/src/stm32f4xx_dac.c.o
@@ -426,7 +475,7 @@ stdlib/src/stm32f4xx_dac.o: stdlib/src/stm32f4xx_dac.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_dac.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dac.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dac.c.o
 .PHONY : stdlib/src/stm32f4xx_dac.c.o
 
 stdlib/src/stm32f4xx_dac.i: stdlib/src/stm32f4xx_dac.c.i
@@ -435,7 +484,7 @@ stdlib/src/stm32f4xx_dac.i: stdlib/src/stm32f4xx_dac.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_dac.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dac.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dac.c.i
 .PHONY : stdlib/src/stm32f4xx_dac.c.i
 
 stdlib/src/stm32f4xx_dac.s: stdlib/src/stm32f4xx_dac.c.s
@@ -444,7 +493,7 @@ stdlib/src/stm32f4xx_dac.s: stdlib/src/stm32f4xx_dac.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_dac.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dac.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dac.c.s
 .PHONY : stdlib/src/stm32f4xx_dac.c.s
 
 stdlib/src/stm32f4xx_dbgmcu.o: stdlib/src/stm32f4xx_dbgmcu.c.o
@@ -453,7 +502,7 @@ stdlib/src/stm32f4xx_dbgmcu.o: stdlib/src/stm32f4xx_dbgmcu.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_dbgmcu.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dbgmcu.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dbgmcu.c.o
 .PHONY : stdlib/src/stm32f4xx_dbgmcu.c.o
 
 stdlib/src/stm32f4xx_dbgmcu.i: stdlib/src/stm32f4xx_dbgmcu.c.i
@@ -462,7 +511,7 @@ stdlib/src/stm32f4xx_dbgmcu.i: stdlib/src/stm32f4xx_dbgmcu.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_dbgmcu.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dbgmcu.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dbgmcu.c.i
 .PHONY : stdlib/src/stm32f4xx_dbgmcu.c.i
 
 stdlib/src/stm32f4xx_dbgmcu.s: stdlib/src/stm32f4xx_dbgmcu.c.s
@@ -471,7 +520,7 @@ stdlib/src/stm32f4xx_dbgmcu.s: stdlib/src/stm32f4xx_dbgmcu.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_dbgmcu.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dbgmcu.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dbgmcu.c.s
 .PHONY : stdlib/src/stm32f4xx_dbgmcu.c.s
 
 stdlib/src/stm32f4xx_dcmi.o: stdlib/src/stm32f4xx_dcmi.c.o
@@ -480,7 +529,7 @@ stdlib/src/stm32f4xx_dcmi.o: stdlib/src/stm32f4xx_dcmi.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_dcmi.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dcmi.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dcmi.c.o
 .PHONY : stdlib/src/stm32f4xx_dcmi.c.o
 
 stdlib/src/stm32f4xx_dcmi.i: stdlib/src/stm32f4xx_dcmi.c.i
@@ -489,7 +538,7 @@ stdlib/src/stm32f4xx_dcmi.i: stdlib/src/stm32f4xx_dcmi.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_dcmi.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dcmi.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dcmi.c.i
 .PHONY : stdlib/src/stm32f4xx_dcmi.c.i
 
 stdlib/src/stm32f4xx_dcmi.s: stdlib/src/stm32f4xx_dcmi.c.s
@@ -498,7 +547,7 @@ stdlib/src/stm32f4xx_dcmi.s: stdlib/src/stm32f4xx_dcmi.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_dcmi.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dcmi.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dcmi.c.s
 .PHONY : stdlib/src/stm32f4xx_dcmi.c.s
 
 stdlib/src/stm32f4xx_dfsdm.o: stdlib/src/stm32f4xx_dfsdm.c.o
@@ -507,7 +556,7 @@ stdlib/src/stm32f4xx_dfsdm.o: stdlib/src/stm32f4xx_dfsdm.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_dfsdm.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dfsdm.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dfsdm.c.o
 .PHONY : stdlib/src/stm32f4xx_dfsdm.c.o
 
 stdlib/src/stm32f4xx_dfsdm.i: stdlib/src/stm32f4xx_dfsdm.c.i
@@ -516,7 +565,7 @@ stdlib/src/stm32f4xx_dfsdm.i: stdlib/src/stm32f4xx_dfsdm.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_dfsdm.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dfsdm.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dfsdm.c.i
 .PHONY : stdlib/src/stm32f4xx_dfsdm.c.i
 
 stdlib/src/stm32f4xx_dfsdm.s: stdlib/src/stm32f4xx_dfsdm.c.s
@@ -525,7 +574,7 @@ stdlib/src/stm32f4xx_dfsdm.s: stdlib/src/stm32f4xx_dfsdm.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_dfsdm.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dfsdm.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dfsdm.c.s
 .PHONY : stdlib/src/stm32f4xx_dfsdm.c.s
 
 stdlib/src/stm32f4xx_dma.o: stdlib/src/stm32f4xx_dma.c.o
@@ -534,7 +583,7 @@ stdlib/src/stm32f4xx_dma.o: stdlib/src/stm32f4xx_dma.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_dma.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dma.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma.c.o
 .PHONY : stdlib/src/stm32f4xx_dma.c.o
 
 stdlib/src/stm32f4xx_dma.i: stdlib/src/stm32f4xx_dma.c.i
@@ -543,7 +592,7 @@ stdlib/src/stm32f4xx_dma.i: stdlib/src/stm32f4xx_dma.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_dma.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dma.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma.c.i
 .PHONY : stdlib/src/stm32f4xx_dma.c.i
 
 stdlib/src/stm32f4xx_dma.s: stdlib/src/stm32f4xx_dma.c.s
@@ -552,7 +601,7 @@ stdlib/src/stm32f4xx_dma.s: stdlib/src/stm32f4xx_dma.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_dma.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dma.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma.c.s
 .PHONY : stdlib/src/stm32f4xx_dma.c.s
 
 stdlib/src/stm32f4xx_dma2d.o: stdlib/src/stm32f4xx_dma2d.c.o
@@ -561,7 +610,7 @@ stdlib/src/stm32f4xx_dma2d.o: stdlib/src/stm32f4xx_dma2d.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_dma2d.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dma2d.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma2d.c.o
 .PHONY : stdlib/src/stm32f4xx_dma2d.c.o
 
 stdlib/src/stm32f4xx_dma2d.i: stdlib/src/stm32f4xx_dma2d.c.i
@@ -570,7 +619,7 @@ stdlib/src/stm32f4xx_dma2d.i: stdlib/src/stm32f4xx_dma2d.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_dma2d.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dma2d.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma2d.c.i
 .PHONY : stdlib/src/stm32f4xx_dma2d.c.i
 
 stdlib/src/stm32f4xx_dma2d.s: stdlib/src/stm32f4xx_dma2d.c.s
@@ -579,7 +628,7 @@ stdlib/src/stm32f4xx_dma2d.s: stdlib/src/stm32f4xx_dma2d.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_dma2d.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dma2d.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma2d.c.s
 .PHONY : stdlib/src/stm32f4xx_dma2d.c.s
 
 stdlib/src/stm32f4xx_dsi.o: stdlib/src/stm32f4xx_dsi.c.o
@@ -588,7 +637,7 @@ stdlib/src/stm32f4xx_dsi.o: stdlib/src/stm32f4xx_dsi.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_dsi.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dsi.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dsi.c.o
 .PHONY : stdlib/src/stm32f4xx_dsi.c.o
 
 stdlib/src/stm32f4xx_dsi.i: stdlib/src/stm32f4xx_dsi.c.i
@@ -597,7 +646,7 @@ stdlib/src/stm32f4xx_dsi.i: stdlib/src/stm32f4xx_dsi.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_dsi.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dsi.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dsi.c.i
 .PHONY : stdlib/src/stm32f4xx_dsi.c.i
 
 stdlib/src/stm32f4xx_dsi.s: stdlib/src/stm32f4xx_dsi.c.s
@@ -606,7 +655,7 @@ stdlib/src/stm32f4xx_dsi.s: stdlib/src/stm32f4xx_dsi.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_dsi.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_dsi.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_dsi.c.s
 .PHONY : stdlib/src/stm32f4xx_dsi.c.s
 
 stdlib/src/stm32f4xx_exti.o: stdlib/src/stm32f4xx_exti.c.o
@@ -615,7 +664,7 @@ stdlib/src/stm32f4xx_exti.o: stdlib/src/stm32f4xx_exti.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_exti.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_exti.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_exti.c.o
 .PHONY : stdlib/src/stm32f4xx_exti.c.o
 
 stdlib/src/stm32f4xx_exti.i: stdlib/src/stm32f4xx_exti.c.i
@@ -624,7 +673,7 @@ stdlib/src/stm32f4xx_exti.i: stdlib/src/stm32f4xx_exti.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_exti.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_exti.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_exti.c.i
 .PHONY : stdlib/src/stm32f4xx_exti.c.i
 
 stdlib/src/stm32f4xx_exti.s: stdlib/src/stm32f4xx_exti.c.s
@@ -633,7 +682,7 @@ stdlib/src/stm32f4xx_exti.s: stdlib/src/stm32f4xx_exti.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_exti.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_exti.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_exti.c.s
 .PHONY : stdlib/src/stm32f4xx_exti.c.s
 
 stdlib/src/stm32f4xx_flash.o: stdlib/src/stm32f4xx_flash.c.o
@@ -642,7 +691,7 @@ stdlib/src/stm32f4xx_flash.o: stdlib/src/stm32f4xx_flash.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_flash.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_flash.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash.c.o
 .PHONY : stdlib/src/stm32f4xx_flash.c.o
 
 stdlib/src/stm32f4xx_flash.i: stdlib/src/stm32f4xx_flash.c.i
@@ -651,7 +700,7 @@ stdlib/src/stm32f4xx_flash.i: stdlib/src/stm32f4xx_flash.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_flash.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_flash.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash.c.i
 .PHONY : stdlib/src/stm32f4xx_flash.c.i
 
 stdlib/src/stm32f4xx_flash.s: stdlib/src/stm32f4xx_flash.c.s
@@ -660,7 +709,7 @@ stdlib/src/stm32f4xx_flash.s: stdlib/src/stm32f4xx_flash.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_flash.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_flash.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash.c.s
 .PHONY : stdlib/src/stm32f4xx_flash.c.s
 
 stdlib/src/stm32f4xx_flash_ramfunc.o: stdlib/src/stm32f4xx_flash_ramfunc.c.o
@@ -669,7 +718,7 @@ stdlib/src/stm32f4xx_flash_ramfunc.o: stdlib/src/stm32f4xx_flash_ramfunc.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_flash_ramfunc.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_flash_ramfunc.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash_ramfunc.c.o
 .PHONY : stdlib/src/stm32f4xx_flash_ramfunc.c.o
 
 stdlib/src/stm32f4xx_flash_ramfunc.i: stdlib/src/stm32f4xx_flash_ramfunc.c.i
@@ -678,7 +727,7 @@ stdlib/src/stm32f4xx_flash_ramfunc.i: stdlib/src/stm32f4xx_flash_ramfunc.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_flash_ramfunc.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_flash_ramfunc.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash_ramfunc.c.i
 .PHONY : stdlib/src/stm32f4xx_flash_ramfunc.c.i
 
 stdlib/src/stm32f4xx_flash_ramfunc.s: stdlib/src/stm32f4xx_flash_ramfunc.c.s
@@ -687,7 +736,7 @@ stdlib/src/stm32f4xx_flash_ramfunc.s: stdlib/src/stm32f4xx_flash_ramfunc.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_flash_ramfunc.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_flash_ramfunc.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash_ramfunc.c.s
 .PHONY : stdlib/src/stm32f4xx_flash_ramfunc.c.s
 
 stdlib/src/stm32f4xx_fmpi2c.o: stdlib/src/stm32f4xx_fmpi2c.c.o
@@ -696,7 +745,7 @@ stdlib/src/stm32f4xx_fmpi2c.o: stdlib/src/stm32f4xx_fmpi2c.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_fmpi2c.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_fmpi2c.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_fmpi2c.c.o
 .PHONY : stdlib/src/stm32f4xx_fmpi2c.c.o
 
 stdlib/src/stm32f4xx_fmpi2c.i: stdlib/src/stm32f4xx_fmpi2c.c.i
@@ -705,7 +754,7 @@ stdlib/src/stm32f4xx_fmpi2c.i: stdlib/src/stm32f4xx_fmpi2c.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_fmpi2c.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_fmpi2c.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_fmpi2c.c.i
 .PHONY : stdlib/src/stm32f4xx_fmpi2c.c.i
 
 stdlib/src/stm32f4xx_fmpi2c.s: stdlib/src/stm32f4xx_fmpi2c.c.s
@@ -714,7 +763,7 @@ stdlib/src/stm32f4xx_fmpi2c.s: stdlib/src/stm32f4xx_fmpi2c.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_fmpi2c.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_fmpi2c.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_fmpi2c.c.s
 .PHONY : stdlib/src/stm32f4xx_fmpi2c.c.s
 
 stdlib/src/stm32f4xx_gpio.o: stdlib/src/stm32f4xx_gpio.c.o
@@ -723,7 +772,7 @@ stdlib/src/stm32f4xx_gpio.o: stdlib/src/stm32f4xx_gpio.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_gpio.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_gpio.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_gpio.c.o
 .PHONY : stdlib/src/stm32f4xx_gpio.c.o
 
 stdlib/src/stm32f4xx_gpio.i: stdlib/src/stm32f4xx_gpio.c.i
@@ -732,7 +781,7 @@ stdlib/src/stm32f4xx_gpio.i: stdlib/src/stm32f4xx_gpio.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_gpio.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_gpio.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_gpio.c.i
 .PHONY : stdlib/src/stm32f4xx_gpio.c.i
 
 stdlib/src/stm32f4xx_gpio.s: stdlib/src/stm32f4xx_gpio.c.s
@@ -741,7 +790,7 @@ stdlib/src/stm32f4xx_gpio.s: stdlib/src/stm32f4xx_gpio.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_gpio.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_gpio.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_gpio.c.s
 .PHONY : stdlib/src/stm32f4xx_gpio.c.s
 
 stdlib/src/stm32f4xx_hash.o: stdlib/src/stm32f4xx_hash.c.o
@@ -750,7 +799,7 @@ stdlib/src/stm32f4xx_hash.o: stdlib/src/stm32f4xx_hash.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_hash.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_hash.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash.c.o
 .PHONY : stdlib/src/stm32f4xx_hash.c.o
 
 stdlib/src/stm32f4xx_hash.i: stdlib/src/stm32f4xx_hash.c.i
@@ -759,7 +808,7 @@ stdlib/src/stm32f4xx_hash.i: stdlib/src/stm32f4xx_hash.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_hash.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_hash.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash.c.i
 .PHONY : stdlib/src/stm32f4xx_hash.c.i
 
 stdlib/src/stm32f4xx_hash.s: stdlib/src/stm32f4xx_hash.c.s
@@ -768,7 +817,7 @@ stdlib/src/stm32f4xx_hash.s: stdlib/src/stm32f4xx_hash.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_hash.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_hash.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash.c.s
 .PHONY : stdlib/src/stm32f4xx_hash.c.s
 
 stdlib/src/stm32f4xx_hash_md5.o: stdlib/src/stm32f4xx_hash_md5.c.o
@@ -777,7 +826,7 @@ stdlib/src/stm32f4xx_hash_md5.o: stdlib/src/stm32f4xx_hash_md5.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_hash_md5.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_hash_md5.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_md5.c.o
 .PHONY : stdlib/src/stm32f4xx_hash_md5.c.o
 
 stdlib/src/stm32f4xx_hash_md5.i: stdlib/src/stm32f4xx_hash_md5.c.i
@@ -786,7 +835,7 @@ stdlib/src/stm32f4xx_hash_md5.i: stdlib/src/stm32f4xx_hash_md5.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_hash_md5.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_hash_md5.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_md5.c.i
 .PHONY : stdlib/src/stm32f4xx_hash_md5.c.i
 
 stdlib/src/stm32f4xx_hash_md5.s: stdlib/src/stm32f4xx_hash_md5.c.s
@@ -795,7 +844,7 @@ stdlib/src/stm32f4xx_hash_md5.s: stdlib/src/stm32f4xx_hash_md5.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_hash_md5.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_hash_md5.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_md5.c.s
 .PHONY : stdlib/src/stm32f4xx_hash_md5.c.s
 
 stdlib/src/stm32f4xx_hash_sha1.o: stdlib/src/stm32f4xx_hash_sha1.c.o
@@ -804,7 +853,7 @@ stdlib/src/stm32f4xx_hash_sha1.o: stdlib/src/stm32f4xx_hash_sha1.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_hash_sha1.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_hash_sha1.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_sha1.c.o
 .PHONY : stdlib/src/stm32f4xx_hash_sha1.c.o
 
 stdlib/src/stm32f4xx_hash_sha1.i: stdlib/src/stm32f4xx_hash_sha1.c.i
@@ -813,7 +862,7 @@ stdlib/src/stm32f4xx_hash_sha1.i: stdlib/src/stm32f4xx_hash_sha1.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_hash_sha1.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_hash_sha1.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_sha1.c.i
 .PHONY : stdlib/src/stm32f4xx_hash_sha1.c.i
 
 stdlib/src/stm32f4xx_hash_sha1.s: stdlib/src/stm32f4xx_hash_sha1.c.s
@@ -822,7 +871,7 @@ stdlib/src/stm32f4xx_hash_sha1.s: stdlib/src/stm32f4xx_hash_sha1.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_hash_sha1.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_hash_sha1.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_sha1.c.s
 .PHONY : stdlib/src/stm32f4xx_hash_sha1.c.s
 
 stdlib/src/stm32f4xx_i2c.o: stdlib/src/stm32f4xx_i2c.c.o
@@ -831,7 +880,7 @@ stdlib/src/stm32f4xx_i2c.o: stdlib/src/stm32f4xx_i2c.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_i2c.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_i2c.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_i2c.c.o
 .PHONY : stdlib/src/stm32f4xx_i2c.c.o
 
 stdlib/src/stm32f4xx_i2c.i: stdlib/src/stm32f4xx_i2c.c.i
@@ -840,7 +889,7 @@ stdlib/src/stm32f4xx_i2c.i: stdlib/src/stm32f4xx_i2c.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_i2c.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_i2c.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_i2c.c.i
 .PHONY : stdlib/src/stm32f4xx_i2c.c.i
 
 stdlib/src/stm32f4xx_i2c.s: stdlib/src/stm32f4xx_i2c.c.s
@@ -849,7 +898,7 @@ stdlib/src/stm32f4xx_i2c.s: stdlib/src/stm32f4xx_i2c.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_i2c.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_i2c.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_i2c.c.s
 .PHONY : stdlib/src/stm32f4xx_i2c.c.s
 
 stdlib/src/stm32f4xx_iwdg.o: stdlib/src/stm32f4xx_iwdg.c.o
@@ -858,7 +907,7 @@ stdlib/src/stm32f4xx_iwdg.o: stdlib/src/stm32f4xx_iwdg.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_iwdg.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_iwdg.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_iwdg.c.o
 .PHONY : stdlib/src/stm32f4xx_iwdg.c.o
 
 stdlib/src/stm32f4xx_iwdg.i: stdlib/src/stm32f4xx_iwdg.c.i
@@ -867,7 +916,7 @@ stdlib/src/stm32f4xx_iwdg.i: stdlib/src/stm32f4xx_iwdg.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_iwdg.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_iwdg.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_iwdg.c.i
 .PHONY : stdlib/src/stm32f4xx_iwdg.c.i
 
 stdlib/src/stm32f4xx_iwdg.s: stdlib/src/stm32f4xx_iwdg.c.s
@@ -876,7 +925,7 @@ stdlib/src/stm32f4xx_iwdg.s: stdlib/src/stm32f4xx_iwdg.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_iwdg.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_iwdg.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_iwdg.c.s
 .PHONY : stdlib/src/stm32f4xx_iwdg.c.s
 
 stdlib/src/stm32f4xx_lptim.o: stdlib/src/stm32f4xx_lptim.c.o
@@ -885,7 +934,7 @@ stdlib/src/stm32f4xx_lptim.o: stdlib/src/stm32f4xx_lptim.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_lptim.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_lptim.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_lptim.c.o
 .PHONY : stdlib/src/stm32f4xx_lptim.c.o
 
 stdlib/src/stm32f4xx_lptim.i: stdlib/src/stm32f4xx_lptim.c.i
@@ -894,7 +943,7 @@ stdlib/src/stm32f4xx_lptim.i: stdlib/src/stm32f4xx_lptim.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_lptim.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_lptim.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_lptim.c.i
 .PHONY : stdlib/src/stm32f4xx_lptim.c.i
 
 stdlib/src/stm32f4xx_lptim.s: stdlib/src/stm32f4xx_lptim.c.s
@@ -903,7 +952,7 @@ stdlib/src/stm32f4xx_lptim.s: stdlib/src/stm32f4xx_lptim.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_lptim.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_lptim.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_lptim.c.s
 .PHONY : stdlib/src/stm32f4xx_lptim.c.s
 
 stdlib/src/stm32f4xx_ltdc.o: stdlib/src/stm32f4xx_ltdc.c.o
@@ -912,7 +961,7 @@ stdlib/src/stm32f4xx_ltdc.o: stdlib/src/stm32f4xx_ltdc.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_ltdc.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_ltdc.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_ltdc.c.o
 .PHONY : stdlib/src/stm32f4xx_ltdc.c.o
 
 stdlib/src/stm32f4xx_ltdc.i: stdlib/src/stm32f4xx_ltdc.c.i
@@ -921,7 +970,7 @@ stdlib/src/stm32f4xx_ltdc.i: stdlib/src/stm32f4xx_ltdc.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_ltdc.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_ltdc.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_ltdc.c.i
 .PHONY : stdlib/src/stm32f4xx_ltdc.c.i
 
 stdlib/src/stm32f4xx_ltdc.s: stdlib/src/stm32f4xx_ltdc.c.s
@@ -930,7 +979,7 @@ stdlib/src/stm32f4xx_ltdc.s: stdlib/src/stm32f4xx_ltdc.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_ltdc.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_ltdc.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_ltdc.c.s
 .PHONY : stdlib/src/stm32f4xx_ltdc.c.s
 
 stdlib/src/stm32f4xx_pwr.o: stdlib/src/stm32f4xx_pwr.c.o
@@ -939,7 +988,7 @@ stdlib/src/stm32f4xx_pwr.o: stdlib/src/stm32f4xx_pwr.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_pwr.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_pwr.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_pwr.c.o
 .PHONY : stdlib/src/stm32f4xx_pwr.c.o
 
 stdlib/src/stm32f4xx_pwr.i: stdlib/src/stm32f4xx_pwr.c.i
@@ -948,7 +997,7 @@ stdlib/src/stm32f4xx_pwr.i: stdlib/src/stm32f4xx_pwr.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_pwr.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_pwr.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_pwr.c.i
 .PHONY : stdlib/src/stm32f4xx_pwr.c.i
 
 stdlib/src/stm32f4xx_pwr.s: stdlib/src/stm32f4xx_pwr.c.s
@@ -957,7 +1006,7 @@ stdlib/src/stm32f4xx_pwr.s: stdlib/src/stm32f4xx_pwr.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_pwr.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_pwr.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_pwr.c.s
 .PHONY : stdlib/src/stm32f4xx_pwr.c.s
 
 stdlib/src/stm32f4xx_qspi.o: stdlib/src/stm32f4xx_qspi.c.o
@@ -966,7 +1015,7 @@ stdlib/src/stm32f4xx_qspi.o: stdlib/src/stm32f4xx_qspi.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_qspi.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_qspi.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_qspi.c.o
 .PHONY : stdlib/src/stm32f4xx_qspi.c.o
 
 stdlib/src/stm32f4xx_qspi.i: stdlib/src/stm32f4xx_qspi.c.i
@@ -975,7 +1024,7 @@ stdlib/src/stm32f4xx_qspi.i: stdlib/src/stm32f4xx_qspi.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_qspi.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_qspi.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_qspi.c.i
 .PHONY : stdlib/src/stm32f4xx_qspi.c.i
 
 stdlib/src/stm32f4xx_qspi.s: stdlib/src/stm32f4xx_qspi.c.s
@@ -984,7 +1033,7 @@ stdlib/src/stm32f4xx_qspi.s: stdlib/src/stm32f4xx_qspi.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_qspi.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_qspi.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_qspi.c.s
 .PHONY : stdlib/src/stm32f4xx_qspi.c.s
 
 stdlib/src/stm32f4xx_rcc.o: stdlib/src/stm32f4xx_rcc.c.o
@@ -993,7 +1042,7 @@ stdlib/src/stm32f4xx_rcc.o: stdlib/src/stm32f4xx_rcc.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_rcc.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_rcc.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_rcc.c.o
 .PHONY : stdlib/src/stm32f4xx_rcc.c.o
 
 stdlib/src/stm32f4xx_rcc.i: stdlib/src/stm32f4xx_rcc.c.i
@@ -1002,7 +1051,7 @@ stdlib/src/stm32f4xx_rcc.i: stdlib/src/stm32f4xx_rcc.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_rcc.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_rcc.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_rcc.c.i
 .PHONY : stdlib/src/stm32f4xx_rcc.c.i
 
 stdlib/src/stm32f4xx_rcc.s: stdlib/src/stm32f4xx_rcc.c.s
@@ -1011,7 +1060,7 @@ stdlib/src/stm32f4xx_rcc.s: stdlib/src/stm32f4xx_rcc.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_rcc.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_rcc.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_rcc.c.s
 .PHONY : stdlib/src/stm32f4xx_rcc.c.s
 
 stdlib/src/stm32f4xx_rng.o: stdlib/src/stm32f4xx_rng.c.o
@@ -1020,7 +1069,7 @@ stdlib/src/stm32f4xx_rng.o: stdlib/src/stm32f4xx_rng.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_rng.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_rng.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_rng.c.o
 .PHONY : stdlib/src/stm32f4xx_rng.c.o
 
 stdlib/src/stm32f4xx_rng.i: stdlib/src/stm32f4xx_rng.c.i
@@ -1029,7 +1078,7 @@ stdlib/src/stm32f4xx_rng.i: stdlib/src/stm32f4xx_rng.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_rng.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_rng.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_rng.c.i
 .PHONY : stdlib/src/stm32f4xx_rng.c.i
 
 stdlib/src/stm32f4xx_rng.s: stdlib/src/stm32f4xx_rng.c.s
@@ -1038,7 +1087,7 @@ stdlib/src/stm32f4xx_rng.s: stdlib/src/stm32f4xx_rng.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_rng.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_rng.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_rng.c.s
 .PHONY : stdlib/src/stm32f4xx_rng.c.s
 
 stdlib/src/stm32f4xx_rtc.o: stdlib/src/stm32f4xx_rtc.c.o
@@ -1047,7 +1096,7 @@ stdlib/src/stm32f4xx_rtc.o: stdlib/src/stm32f4xx_rtc.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_rtc.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_rtc.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_rtc.c.o
 .PHONY : stdlib/src/stm32f4xx_rtc.c.o
 
 stdlib/src/stm32f4xx_rtc.i: stdlib/src/stm32f4xx_rtc.c.i
@@ -1056,7 +1105,7 @@ stdlib/src/stm32f4xx_rtc.i: stdlib/src/stm32f4xx_rtc.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_rtc.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_rtc.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_rtc.c.i
 .PHONY : stdlib/src/stm32f4xx_rtc.c.i
 
 stdlib/src/stm32f4xx_rtc.s: stdlib/src/stm32f4xx_rtc.c.s
@@ -1065,7 +1114,7 @@ stdlib/src/stm32f4xx_rtc.s: stdlib/src/stm32f4xx_rtc.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_rtc.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_rtc.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_rtc.c.s
 .PHONY : stdlib/src/stm32f4xx_rtc.c.s
 
 stdlib/src/stm32f4xx_sai.o: stdlib/src/stm32f4xx_sai.c.o
@@ -1074,7 +1123,7 @@ stdlib/src/stm32f4xx_sai.o: stdlib/src/stm32f4xx_sai.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_sai.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_sai.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_sai.c.o
 .PHONY : stdlib/src/stm32f4xx_sai.c.o
 
 stdlib/src/stm32f4xx_sai.i: stdlib/src/stm32f4xx_sai.c.i
@@ -1083,7 +1132,7 @@ stdlib/src/stm32f4xx_sai.i: stdlib/src/stm32f4xx_sai.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_sai.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_sai.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_sai.c.i
 .PHONY : stdlib/src/stm32f4xx_sai.c.i
 
 stdlib/src/stm32f4xx_sai.s: stdlib/src/stm32f4xx_sai.c.s
@@ -1092,7 +1141,7 @@ stdlib/src/stm32f4xx_sai.s: stdlib/src/stm32f4xx_sai.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_sai.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_sai.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_sai.c.s
 .PHONY : stdlib/src/stm32f4xx_sai.c.s
 
 stdlib/src/stm32f4xx_sdio.o: stdlib/src/stm32f4xx_sdio.c.o
@@ -1101,7 +1150,7 @@ stdlib/src/stm32f4xx_sdio.o: stdlib/src/stm32f4xx_sdio.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_sdio.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_sdio.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_sdio.c.o
 .PHONY : stdlib/src/stm32f4xx_sdio.c.o
 
 stdlib/src/stm32f4xx_sdio.i: stdlib/src/stm32f4xx_sdio.c.i
@@ -1110,7 +1159,7 @@ stdlib/src/stm32f4xx_sdio.i: stdlib/src/stm32f4xx_sdio.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_sdio.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_sdio.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_sdio.c.i
 .PHONY : stdlib/src/stm32f4xx_sdio.c.i
 
 stdlib/src/stm32f4xx_sdio.s: stdlib/src/stm32f4xx_sdio.c.s
@@ -1119,7 +1168,7 @@ stdlib/src/stm32f4xx_sdio.s: stdlib/src/stm32f4xx_sdio.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_sdio.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_sdio.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_sdio.c.s
 .PHONY : stdlib/src/stm32f4xx_sdio.c.s
 
 stdlib/src/stm32f4xx_spdifrx.o: stdlib/src/stm32f4xx_spdifrx.c.o
@@ -1128,7 +1177,7 @@ stdlib/src/stm32f4xx_spdifrx.o: stdlib/src/stm32f4xx_spdifrx.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_spdifrx.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_spdifrx.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_spdifrx.c.o
 .PHONY : stdlib/src/stm32f4xx_spdifrx.c.o
 
 stdlib/src/stm32f4xx_spdifrx.i: stdlib/src/stm32f4xx_spdifrx.c.i
@@ -1137,7 +1186,7 @@ stdlib/src/stm32f4xx_spdifrx.i: stdlib/src/stm32f4xx_spdifrx.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_spdifrx.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_spdifrx.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_spdifrx.c.i
 .PHONY : stdlib/src/stm32f4xx_spdifrx.c.i
 
 stdlib/src/stm32f4xx_spdifrx.s: stdlib/src/stm32f4xx_spdifrx.c.s
@@ -1146,7 +1195,7 @@ stdlib/src/stm32f4xx_spdifrx.s: stdlib/src/stm32f4xx_spdifrx.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_spdifrx.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_spdifrx.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_spdifrx.c.s
 .PHONY : stdlib/src/stm32f4xx_spdifrx.c.s
 
 stdlib/src/stm32f4xx_spi.o: stdlib/src/stm32f4xx_spi.c.o
@@ -1155,7 +1204,7 @@ stdlib/src/stm32f4xx_spi.o: stdlib/src/stm32f4xx_spi.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_spi.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_spi.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_spi.c.o
 .PHONY : stdlib/src/stm32f4xx_spi.c.o
 
 stdlib/src/stm32f4xx_spi.i: stdlib/src/stm32f4xx_spi.c.i
@@ -1164,7 +1213,7 @@ stdlib/src/stm32f4xx_spi.i: stdlib/src/stm32f4xx_spi.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_spi.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_spi.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_spi.c.i
 .PHONY : stdlib/src/stm32f4xx_spi.c.i
 
 stdlib/src/stm32f4xx_spi.s: stdlib/src/stm32f4xx_spi.c.s
@@ -1173,7 +1222,7 @@ stdlib/src/stm32f4xx_spi.s: stdlib/src/stm32f4xx_spi.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_spi.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_spi.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_spi.c.s
 .PHONY : stdlib/src/stm32f4xx_spi.c.s
 
 stdlib/src/stm32f4xx_syscfg.o: stdlib/src/stm32f4xx_syscfg.c.o
@@ -1182,7 +1231,7 @@ stdlib/src/stm32f4xx_syscfg.o: stdlib/src/stm32f4xx_syscfg.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_syscfg.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_syscfg.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_syscfg.c.o
 .PHONY : stdlib/src/stm32f4xx_syscfg.c.o
 
 stdlib/src/stm32f4xx_syscfg.i: stdlib/src/stm32f4xx_syscfg.c.i
@@ -1191,7 +1240,7 @@ stdlib/src/stm32f4xx_syscfg.i: stdlib/src/stm32f4xx_syscfg.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_syscfg.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_syscfg.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_syscfg.c.i
 .PHONY : stdlib/src/stm32f4xx_syscfg.c.i
 
 stdlib/src/stm32f4xx_syscfg.s: stdlib/src/stm32f4xx_syscfg.c.s
@@ -1200,7 +1249,7 @@ stdlib/src/stm32f4xx_syscfg.s: stdlib/src/stm32f4xx_syscfg.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_syscfg.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_syscfg.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_syscfg.c.s
 .PHONY : stdlib/src/stm32f4xx_syscfg.c.s
 
 stdlib/src/stm32f4xx_tim.o: stdlib/src/stm32f4xx_tim.c.o
@@ -1209,7 +1258,7 @@ stdlib/src/stm32f4xx_tim.o: stdlib/src/stm32f4xx_tim.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_tim.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_tim.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_tim.c.o
 .PHONY : stdlib/src/stm32f4xx_tim.c.o
 
 stdlib/src/stm32f4xx_tim.i: stdlib/src/stm32f4xx_tim.c.i
@@ -1218,7 +1267,7 @@ stdlib/src/stm32f4xx_tim.i: stdlib/src/stm32f4xx_tim.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_tim.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_tim.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_tim.c.i
 .PHONY : stdlib/src/stm32f4xx_tim.c.i
 
 stdlib/src/stm32f4xx_tim.s: stdlib/src/stm32f4xx_tim.c.s
@@ -1227,7 +1276,7 @@ stdlib/src/stm32f4xx_tim.s: stdlib/src/stm32f4xx_tim.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_tim.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_tim.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_tim.c.s
 .PHONY : stdlib/src/stm32f4xx_tim.c.s
 
 stdlib/src/stm32f4xx_usart.o: stdlib/src/stm32f4xx_usart.c.o
@@ -1236,7 +1285,7 @@ stdlib/src/stm32f4xx_usart.o: stdlib/src/stm32f4xx_usart.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_usart.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_usart.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_usart.c.o
 .PHONY : stdlib/src/stm32f4xx_usart.c.o
 
 stdlib/src/stm32f4xx_usart.i: stdlib/src/stm32f4xx_usart.c.i
@@ -1245,7 +1294,7 @@ stdlib/src/stm32f4xx_usart.i: stdlib/src/stm32f4xx_usart.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_usart.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_usart.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_usart.c.i
 .PHONY : stdlib/src/stm32f4xx_usart.c.i
 
 stdlib/src/stm32f4xx_usart.s: stdlib/src/stm32f4xx_usart.c.s
@@ -1254,7 +1303,7 @@ stdlib/src/stm32f4xx_usart.s: stdlib/src/stm32f4xx_usart.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_usart.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_usart.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_usart.c.s
 .PHONY : stdlib/src/stm32f4xx_usart.c.s
 
 stdlib/src/stm32f4xx_wwdg.o: stdlib/src/stm32f4xx_wwdg.c.o
@@ -1263,7 +1312,7 @@ stdlib/src/stm32f4xx_wwdg.o: stdlib/src/stm32f4xx_wwdg.c.o
 
 # target to build an object file
 stdlib/src/stm32f4xx_wwdg.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_wwdg.c.o
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o
 .PHONY : stdlib/src/stm32f4xx_wwdg.c.o
 
 stdlib/src/stm32f4xx_wwdg.i: stdlib/src/stm32f4xx_wwdg.c.i
@@ -1272,7 +1321,7 @@ stdlib/src/stm32f4xx_wwdg.i: stdlib/src/stm32f4xx_wwdg.c.i
 
 # target to preprocess a source file
 stdlib/src/stm32f4xx_wwdg.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_wwdg.c.i
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.i
 .PHONY : stdlib/src/stm32f4xx_wwdg.c.i
 
 stdlib/src/stm32f4xx_wwdg.s: stdlib/src/stm32f4xx_wwdg.c.s
@@ -1281,35 +1330,8 @@ stdlib/src/stm32f4xx_wwdg.s: stdlib/src/stm32f4xx_wwdg.c.s
 
 # target to generate assembly for a file
 stdlib/src/stm32f4xx_wwdg.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/stm32f4xx_wwdg.c.s
+	$(MAKE) -f CMakeFiles/std.dir/build.make CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.s
 .PHONY : stdlib/src/stm32f4xx_wwdg.c.s
-
-stdlib/src/system_stm32f4xx.o: stdlib/src/system_stm32f4xx.c.o
-
-.PHONY : stdlib/src/system_stm32f4xx.o
-
-# target to build an object file
-stdlib/src/system_stm32f4xx.c.o:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/system_stm32f4xx.c.o
-.PHONY : stdlib/src/system_stm32f4xx.c.o
-
-stdlib/src/system_stm32f4xx.i: stdlib/src/system_stm32f4xx.c.i
-
-.PHONY : stdlib/src/system_stm32f4xx.i
-
-# target to preprocess a source file
-stdlib/src/system_stm32f4xx.c.i:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/system_stm32f4xx.c.i
-.PHONY : stdlib/src/system_stm32f4xx.c.i
-
-stdlib/src/system_stm32f4xx.s: stdlib/src/system_stm32f4xx.c.s
-
-.PHONY : stdlib/src/system_stm32f4xx.s
-
-# target to generate assembly for a file
-stdlib/src/system_stm32f4xx.c.s:
-	$(MAKE) -f CMakeFiles/stm32f405_template.elf.dir/build.make CMakeFiles/stm32f405_template.elf.dir/stdlib/src/system_stm32f4xx.c.s
-.PHONY : stdlib/src/system_stm32f4xx.c.s
 
 # Help Target
 help:
@@ -1319,13 +1341,18 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... stm32f405_template.elf"
-	@echo "... core/startup_stm32f40_41xxx.o"
-	@echo "... core/startup_stm32f40_41xxx.i"
-	@echo "... core/startup_stm32f40_41xxx.s"
+	@echo "... stm32f405rgt_template.elf"
+	@echo "... std"
+	@echo "... core/startup_stm32f40xx.o"
 	@echo "... main/main.o"
 	@echo "... main/main.i"
 	@echo "... main/main.s"
+	@echo "... main/stm32f4xx_it.o"
+	@echo "... main/stm32f4xx_it.i"
+	@echo "... main/stm32f4xx_it.s"
+	@echo "... main/system_stm32f4xx.o"
+	@echo "... main/system_stm32f4xx.i"
+	@echo "... main/system_stm32f4xx.s"
 	@echo "... stdlib/src/misc.o"
 	@echo "... stdlib/src/misc.i"
 	@echo "... stdlib/src/misc.s"
@@ -1449,9 +1476,6 @@ help:
 	@echo "... stdlib/src/stm32f4xx_wwdg.o"
 	@echo "... stdlib/src/stm32f4xx_wwdg.i"
 	@echo "... stdlib/src/stm32f4xx_wwdg.s"
-	@echo "... stdlib/src/system_stm32f4xx.o"
-	@echo "... stdlib/src/system_stm32f4xx.i"
-	@echo "... stdlib/src/system_stm32f4xx.s"
 .PHONY : help
 
 

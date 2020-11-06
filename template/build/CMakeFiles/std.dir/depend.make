@@ -5,6 +5,7 @@ CMakeFiles/std.dir/stdlib/src/misc.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/misc.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/misc.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/misc.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/misc.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/misc.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/misc.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/misc.c.o: ../stdlib/inc/misc.h
@@ -51,6 +52,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_adc.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_adc.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_adc.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_adc.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_adc.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_adc.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_adc.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_adc.c.o: ../stdlib/inc/misc.h
@@ -97,6 +99,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_can.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_can.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_can.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_can.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_can.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_can.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_can.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_can.c.o: ../stdlib/inc/misc.h
@@ -143,6 +146,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_cec.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cec.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cec.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cec.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_cec.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cec.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cec.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cec.c.o: ../stdlib/inc/misc.h
@@ -189,6 +193,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_crc.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_crc.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_crc.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_crc.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_crc.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_crc.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_crc.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_crc.c.o: ../stdlib/inc/misc.h
@@ -235,6 +240,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp.c.o: ../stdlib/inc/misc.h
@@ -281,6 +287,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_aes.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_aes.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_aes.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_aes.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_aes.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_aes.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_aes.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_aes.c.o: ../stdlib/inc/misc.h
@@ -327,6 +334,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_des.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_des.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_des.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_des.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_des.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_des.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_des.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_des.c.o: ../stdlib/inc/misc.h
@@ -373,6 +381,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_tdes.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_tdes.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_tdes.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_tdes.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_tdes.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_tdes.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_tdes.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_cryp_tdes.c.o: ../stdlib/inc/misc.h
@@ -419,6 +428,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_dac.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dac.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dac.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dac.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_dac.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dac.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dac.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dac.c.o: ../stdlib/inc/misc.h
@@ -465,6 +475,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_dbgmcu.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dbgmcu.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dbgmcu.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dbgmcu.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_dbgmcu.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dbgmcu.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dbgmcu.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dbgmcu.c.o: ../stdlib/inc/misc.h
@@ -511,6 +522,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_dcmi.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dcmi.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dcmi.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dcmi.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_dcmi.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dcmi.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dcmi.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dcmi.c.o: ../stdlib/inc/misc.h
@@ -557,6 +569,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_dfsdm.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dfsdm.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dfsdm.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dfsdm.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_dfsdm.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dfsdm.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dfsdm.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dfsdm.c.o: ../stdlib/inc/misc.h
@@ -603,6 +616,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma.c.o: ../stdlib/inc/misc.h
@@ -649,6 +663,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma2d.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma2d.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma2d.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma2d.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma2d.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma2d.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma2d.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dma2d.c.o: ../stdlib/inc/misc.h
@@ -695,6 +710,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_dsi.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dsi.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dsi.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dsi.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_dsi.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dsi.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dsi.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_dsi.c.o: ../stdlib/inc/misc.h
@@ -741,6 +757,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_exti.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_exti.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_exti.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_exti.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_exti.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_exti.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_exti.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_exti.c.o: ../stdlib/inc/misc.h
@@ -787,6 +804,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash.c.o: ../stdlib/inc/misc.h
@@ -833,6 +851,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash_ramfunc.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash_ramfunc.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash_ramfunc.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash_ramfunc.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash_ramfunc.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash_ramfunc.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash_ramfunc.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_flash_ramfunc.c.o: ../stdlib/inc/misc.h
@@ -879,6 +898,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_fmpi2c.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_fmpi2c.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_fmpi2c.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_fmpi2c.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_fmpi2c.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_fmpi2c.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_fmpi2c.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_fmpi2c.c.o: ../stdlib/inc/misc.h
@@ -925,6 +945,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_gpio.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_gpio.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_gpio.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_gpio.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_gpio.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_gpio.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_gpio.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_gpio.c.o: ../stdlib/inc/misc.h
@@ -971,6 +992,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash.c.o: ../stdlib/inc/misc.h
@@ -1017,6 +1039,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_md5.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_md5.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_md5.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_md5.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_md5.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_md5.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_md5.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_md5.c.o: ../stdlib/inc/misc.h
@@ -1063,6 +1086,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_sha1.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_sha1.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_sha1.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_sha1.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_sha1.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_sha1.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_sha1.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_hash_sha1.c.o: ../stdlib/inc/misc.h
@@ -1109,6 +1133,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_i2c.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_i2c.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_i2c.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_i2c.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_i2c.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_i2c.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_i2c.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_i2c.c.o: ../stdlib/inc/misc.h
@@ -1155,6 +1180,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_iwdg.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_iwdg.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_iwdg.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_iwdg.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_iwdg.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_iwdg.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_iwdg.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_iwdg.c.o: ../stdlib/inc/misc.h
@@ -1201,6 +1227,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_lptim.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_lptim.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_lptim.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_lptim.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_lptim.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_lptim.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_lptim.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_lptim.c.o: ../stdlib/inc/misc.h
@@ -1247,6 +1274,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_ltdc.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_ltdc.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_ltdc.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_ltdc.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_ltdc.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_ltdc.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_ltdc.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_ltdc.c.o: ../stdlib/inc/misc.h
@@ -1293,6 +1321,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_pwr.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_pwr.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_pwr.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_pwr.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_pwr.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_pwr.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_pwr.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_pwr.c.o: ../stdlib/inc/misc.h
@@ -1339,6 +1368,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_qspi.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_qspi.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_qspi.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_qspi.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_qspi.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_qspi.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_qspi.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_qspi.c.o: ../stdlib/inc/misc.h
@@ -1385,6 +1415,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_rcc.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rcc.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rcc.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rcc.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_rcc.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rcc.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rcc.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rcc.c.o: ../stdlib/inc/misc.h
@@ -1431,6 +1462,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_rng.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rng.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rng.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rng.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_rng.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rng.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rng.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rng.c.o: ../stdlib/inc/misc.h
@@ -1477,6 +1509,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_rtc.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rtc.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rtc.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rtc.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_rtc.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rtc.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rtc.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_rtc.c.o: ../stdlib/inc/misc.h
@@ -1523,6 +1556,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_sai.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_sai.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_sai.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_sai.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_sai.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_sai.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_sai.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_sai.c.o: ../stdlib/inc/misc.h
@@ -1569,6 +1603,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_sdio.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_sdio.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_sdio.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_sdio.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_sdio.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_sdio.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_sdio.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_sdio.c.o: ../stdlib/inc/misc.h
@@ -1615,6 +1650,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_spdifrx.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_spdifrx.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_spdifrx.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_spdifrx.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_spdifrx.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_spdifrx.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_spdifrx.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_spdifrx.c.o: ../stdlib/inc/misc.h
@@ -1661,6 +1697,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_spi.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_spi.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_spi.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_spi.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_spi.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_spi.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_spi.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_spi.c.o: ../stdlib/inc/misc.h
@@ -1707,6 +1744,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_syscfg.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_syscfg.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_syscfg.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_syscfg.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_syscfg.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_syscfg.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_syscfg.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_syscfg.c.o: ../stdlib/inc/misc.h
@@ -1753,6 +1791,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_tim.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_tim.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_tim.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_tim.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_tim.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_tim.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_tim.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_tim.c.o: ../stdlib/inc/misc.h
@@ -1799,6 +1838,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_usart.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_usart.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_usart.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_usart.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_usart.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_usart.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_usart.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_usart.c.o: ../stdlib/inc/misc.h
@@ -1845,6 +1885,7 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o: ../inc/core_cm4.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o: ../inc/core_cmFunc.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o: ../inc/core_cmInstr.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o: ../inc/core_cmSimd.h
+CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o: ../inc/system_stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o: ../main/stm32f4xx.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o: ../main/stm32f4xx_conf.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o: ../stdlib/inc/misc.h
@@ -1886,50 +1927,4 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o: ../stdlib/inc/stm32f4xx_tim.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o: ../stdlib/inc/stm32f4xx_usart.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o: ../stdlib/inc/stm32f4xx_wwdg.h
 CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o: ../stdlib/src/stm32f4xx_wwdg.c
-
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../inc/core_cm4.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../inc/core_cmFunc.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../inc/core_cmInstr.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../inc/core_cmSimd.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../main/stm32f4xx.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../main/stm32f4xx_conf.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/misc.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_adc.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_can.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_cec.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_crc.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_cryp.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_dac.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_dbgmcu.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_dcmi.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_dfsdm.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_dma.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_dma2d.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_dsi.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_exti.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_flash.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_flash_ramfunc.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_fmc.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_fmpi2c.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_fsmc.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_gpio.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_hash.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_i2c.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_iwdg.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_lptim.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_ltdc.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_pwr.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_qspi.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_rcc.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_rng.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_rtc.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_sai.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_sdio.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_spdifrx.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_spi.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_syscfg.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_tim.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_usart.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/inc/stm32f4xx_wwdg.h
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/src/system_stm32f4xx.c
 

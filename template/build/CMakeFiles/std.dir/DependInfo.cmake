@@ -45,7 +45,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/su/stm32pro_linux/template/stdlib/src/stm32f4xx_tim.c" "/home/su/stm32pro_linux/template/build/CMakeFiles/std.dir/stdlib/src/stm32f4xx_tim.c.o"
   "/home/su/stm32pro_linux/template/stdlib/src/stm32f4xx_usart.c" "/home/su/stm32pro_linux/template/build/CMakeFiles/std.dir/stdlib/src/stm32f4xx_usart.c.o"
   "/home/su/stm32pro_linux/template/stdlib/src/stm32f4xx_wwdg.c" "/home/su/stm32pro_linux/template/build/CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o"
-  "/home/su/stm32pro_linux/template/stdlib/src/system_stm32f4xx.c" "/home/su/stm32pro_linux/template/build/CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -59,6 +58,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../main"
+  "../core"
   "../inc"
   "../driver"
   "../driver/usart"

@@ -1,4 +1,4 @@
-#include <stdio.h>
+
 #include "stm32f4xx_conf.h"
 
 void led_conf( GPIO_TypeDef *GPIOx, u32 pin ) {
@@ -39,6 +39,10 @@ int main()
     led_conf( GPIOA, GPIO_Pin_8 );
 
     led_on( GPIOA, GPIO_Pin_8 );
+
+    while (1) {
+        led_on( GPIOA, GPIO_Pin_8 );
+    }
 
     return 0;
 }

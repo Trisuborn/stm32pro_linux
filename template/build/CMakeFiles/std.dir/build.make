@@ -590,19 +590,6 @@ CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.s"
 	arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/su/stm32pro_linux/template/stdlib/src/stm32f4xx_wwdg.c -o CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.s
 
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: CMakeFiles/std.dir/flags.make
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o: ../stdlib/src/system_stm32f4xx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/su/stm32pro_linux/template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o"
-	arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o   -c /home/su/stm32pro_linux/template/stdlib/src/system_stm32f4xx.c
-
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.i"
-	arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/su/stm32pro_linux/template/stdlib/src/system_stm32f4xx.c > CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.i
-
-CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.s"
-	arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/su/stm32pro_linux/template/stdlib/src/system_stm32f4xx.c -o CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.s
-
 # Object files for target std
 std_OBJECTS = \
 "CMakeFiles/std.dir/stdlib/src/misc.c.o" \
@@ -645,8 +632,7 @@ std_OBJECTS = \
 "CMakeFiles/std.dir/stdlib/src/stm32f4xx_syscfg.c.o" \
 "CMakeFiles/std.dir/stdlib/src/stm32f4xx_tim.c.o" \
 "CMakeFiles/std.dir/stdlib/src/stm32f4xx_usart.c.o" \
-"CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o" \
-"CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o"
+"CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o"
 
 # External object files for target std
 std_EXTERNAL_OBJECTS =
@@ -692,10 +678,9 @@ std_EXTERNAL_OBJECTS =
 ../lib/libstd.a: CMakeFiles/std.dir/stdlib/src/stm32f4xx_tim.c.o
 ../lib/libstd.a: CMakeFiles/std.dir/stdlib/src/stm32f4xx_usart.c.o
 ../lib/libstd.a: CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o
-../lib/libstd.a: CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o
 ../lib/libstd.a: CMakeFiles/std.dir/build.make
 ../lib/libstd.a: CMakeFiles/std.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/su/stm32pro_linux/template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Linking C static library ../lib/libstd.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/su/stm32pro_linux/template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Linking C static library ../lib/libstd.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/std.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/std.dir/link.txt --verbose=$(VERBOSE)
 

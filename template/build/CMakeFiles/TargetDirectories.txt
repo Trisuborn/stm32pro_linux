@@ -1,3 +1,4 @@
 /home/su/stm32pro_linux/template/build/CMakeFiles/rebuild_cache.dir
 /home/su/stm32pro_linux/template/build/CMakeFiles/edit_cache.dir
-/home/su/stm32pro_linux/template/build/CMakeFiles/stm32f405_template.elf.dir
+/home/su/stm32pro_linux/template/build/CMakeFiles/stm32f405rgt_template.elf.dir
+/home/su/stm32pro_linux/template/build/CMakeFiles/std.dir

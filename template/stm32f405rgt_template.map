@@ -1,0 +1,621 @@
+Archive member included to satisfy reference by file (symbol)
+
+../lib/libstd.a(stm32f4xx_gpio.c.o)
+                              CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.o (GPIO_Init)
+../lib/libstd.a(stm32f4xx_rcc.c.o)
+                              CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.o (RCC_AHB1PeriphClockCmd)
+CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o: dynamic relocation against `RTC_Alarm_IRQHandler' in read-only section `.isr_vector'
+
+Discarded input sections
+
+ .text          0x0000000000000000       0x14 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+ .data          0x0000000000000000        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+ .bss           0x0000000000000000        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+ .data          0x0000000000000000        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.o
+ .bss           0x0000000000000000        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.o
+ .bss           0x0000000000000000        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/main/system_stm32f4xx.c.o
+ .data          0x0000000000000000        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+ .bss           0x0000000000000000        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+ .data          0x0000000000000000        0x0 ../lib/libstd.a(stm32f4xx_gpio.c.o)
+ .bss           0x0000000000000000        0x0 ../lib/libstd.a(stm32f4xx_gpio.c.o)
+ .bss           0x0000000000000000        0x0 ../lib/libstd.a(stm32f4xx_rcc.c.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000008000000 0x0000000000100000 xr
+RAM              0x0000000020000000 0x0000000000020000 xrw
+CCMRAM           0x0000000010000000 0x0000000000010000 rw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+LOAD CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.o
+LOAD CMakeFiles/stm32f405rgt_template.elf.dir/main/system_stm32f4xx.c.o
+LOAD CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+LOAD ../lib/libstd.a
+                0x0000000020020000                _estack = 0x20020000
+                0x0000000000000200                _Min_Heap_Size = 0x200
+                0x0000000000000400                _Min_Stack_Size = 0x400
+
+.isr_vector     0x0000000008000000      0x188
+                0x0000000008000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x0000000008000000      0x188 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+                0x0000000008000000                g_pfnVectors
+                0x0000000008000188                . = ALIGN (0x4)
+
+.text           0x0000000008000188     0x15e0
+                0x0000000008000188                . = ALIGN (0x4)
+ *(.text)
+ .text          0x0000000008000188      0x118 CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.o
+                0x0000000008000188                led_conf
+                0x0000000008000228                led_on
+                0x0000000008000250                led_off
+                0x0000000008000278                main
+ .text          0x00000000080002a0      0x290 CMakeFiles/stm32f405rgt_template.elf.dir/main/system_stm32f4xx.c.o
+                0x00000000080002a0                SystemInit
+                0x000000000800030c                SystemCoreClockUpdate
+ .text          0x0000000008000530       0x5e CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+                0x0000000008000530                NMI_Handler
+                0x000000000800053e                HardFault_Handler
+                0x0000000008000544                MemManage_Handler
+                0x000000000800054a                BusFault_Handler
+                0x0000000008000550                UsageFault_Handler
+                0x0000000008000556                SVC_Handler
+                0x0000000008000564                DebugMon_Handler
+                0x0000000008000572                PendSV_Handler
+                0x0000000008000580                SysTick_Handler
+ *fill*         0x000000000800058e        0x2 
+ .text          0x0000000008000590      0x4d0 ../lib/libstd.a(stm32f4xx_gpio.c.o)
+                0x0000000008000590                GPIO_DeInit
+                0x00000000080006f4                GPIO_Init
+                0x000000000800080e                GPIO_StructInit
+                0x0000000008000842                GPIO_PinLockConfig
+                0x0000000008000886                GPIO_ReadInputDataBit
+                0x00000000080008ba                GPIO_ReadInputData
+                0x00000000080008d4                GPIO_ReadOutputDataBit
+                0x0000000008000908                GPIO_ReadOutputData
+                0x0000000008000922                GPIO_SetBits
+                0x0000000008000940                GPIO_ResetBits
+                0x000000000800095e                GPIO_WriteBit
+                0x000000000800098c                GPIO_Write
+                0x00000000080009aa                GPIO_ToggleBits
+                0x00000000080009ce                GPIO_PinAFConfig
+ .text          0x0000000008000a60      0xcc0 ../lib/libstd.a(stm32f4xx_rcc.c.o)
+                0x0000000008000a60                RCC_DeInit
+                0x0000000008000ad0                RCC_HSEConfig
+                0x0000000008000af8                RCC_WaitForHSEStartUp
+                0x0000000008000b46                RCC_AdjustHSICalibrationValue
+                0x0000000008000b84                RCC_HSICmd
+                0x0000000008000ba4                RCC_LSEConfig
+                0x0000000008000be8                RCC_LSICmd
+                0x0000000008000c08                RCC_PLLConfig
+                0x0000000008000c48                RCC_PLLCmd
+                0x0000000008000c68                RCC_PLLI2SConfig
+                0x0000000008000c94                RCC_PLLI2SCmd
+                0x0000000008000cb4                RCC_PLLSAIConfig
+                0x0000000008000ce8                RCC_PLLSAICmd
+                0x0000000008000d08                RCC_ClockSecuritySystemCmd
+                0x0000000008000d28                RCC_MCO1Config
+                0x0000000008000d68                RCC_MCO2Config
+                0x0000000008000da8                RCC_SYSCLKConfig
+                0x0000000008000de0                RCC_GetSYSCLKSource
+                0x0000000008000e00                RCC_HCLKConfig
+                0x0000000008000e38                RCC_PCLK1Config
+                0x0000000008000e70                RCC_PCLK2Config
+                0x0000000008000eac                RCC_GetClocksFreq
+                0x000000000800101c                RCC_RTCCLKConfig
+                0x0000000008001078                RCC_RTCCLKCmd
+                0x0000000008001098                RCC_BackupResetCmd
+                0x00000000080010b8                RCC_I2SCLKConfig
+                0x00000000080010d8                RCC_SAIBlockACLKConfig
+                0x0000000008001114                RCC_SAIBlockBCLKConfig
+                0x0000000008001150                RCC_SAIPLLI2SClkDivConfig
+                0x0000000008001190                RCC_SAIPLLSAIClkDivConfig
+                0x00000000080011d0                RCC_LTDCCLKDivConfig
+                0x000000000800120c                RCC_TIMCLKPresConfig
+                0x000000000800122c                RCC_AHB1PeriphClockCmd
+                0x0000000008001268                RCC_AHB2PeriphClockCmd
+                0x00000000080012a4                RCC_AHB3PeriphClockCmd
+                0x00000000080012e0                RCC_APB1PeriphClockCmd
+                0x000000000800131c                RCC_APB2PeriphClockCmd
+                0x0000000008001358                RCC_AHB1PeriphResetCmd
+                0x0000000008001394                RCC_AHB2PeriphResetCmd
+                0x00000000080013d0                RCC_AHB3PeriphResetCmd
+                0x000000000800140c                RCC_APB1PeriphResetCmd
+                0x0000000008001448                RCC_APB2PeriphResetCmd
+                0x0000000008001484                RCC_AHB1PeriphClockLPModeCmd
+                0x00000000080014c0                RCC_AHB2PeriphClockLPModeCmd
+                0x00000000080014fc                RCC_AHB3PeriphClockLPModeCmd
+                0x0000000008001538                RCC_APB1PeriphClockLPModeCmd
+                0x0000000008001574                RCC_APB2PeriphClockLPModeCmd
+                0x00000000080015b0                RCC_LSEModeConfig
+                0x00000000080015ec                RCC_ITConfig
+                0x0000000008001634                RCC_GetFlagStatus
+                0x00000000080016a8                RCC_ClearFlag
+                0x00000000080016c8                RCC_GetITStatus
+                0x0000000008001700                RCC_ClearITPendingBit
+ *(.text*)
+ .text.Reset_Handler
+                0x0000000008001720       0x44 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+                0x0000000008001720                Reset_Handler
+ .text.Default_Handler
+                0x0000000008001764        0x2 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+                0x0000000008001764                RTC_Alarm_IRQHandler
+                0x0000000008001764                HASH_RNG_IRQHandler
+                0x0000000008001764                EXTI2_IRQHandler
+                0x0000000008001764                TIM8_CC_IRQHandler
+                0x0000000008001764                TIM1_CC_IRQHandler
+                0x0000000008001764                DMA2_Stream5_IRQHandler
+                0x0000000008001764                DMA1_Stream5_IRQHandler
+                0x0000000008001764                PVD_IRQHandler
+                0x0000000008001764                SDIO_IRQHandler
+                0x0000000008001764                TAMP_STAMP_IRQHandler
+                0x0000000008001764                CAN2_RX1_IRQHandler
+                0x0000000008001764                EXTI3_IRQHandler
+                0x0000000008001764                TIM8_TRG_COM_TIM14_IRQHandler
+                0x0000000008001764                TIM1_UP_TIM10_IRQHandler
+                0x0000000008001764                TIM8_UP_TIM13_IRQHandler
+                0x0000000008001764                I2C3_ER_IRQHandler
+                0x0000000008001764                EXTI0_IRQHandler
+                0x0000000008001764                I2C2_EV_IRQHandler
+                0x0000000008001764                DMA1_Stream2_IRQHandler
+                0x0000000008001764                CAN1_RX0_IRQHandler
+                0x0000000008001764                FPU_IRQHandler
+                0x0000000008001764                OTG_HS_WKUP_IRQHandler
+                0x0000000008001764                CAN2_SCE_IRQHandler
+                0x0000000008001764                DMA2_Stream2_IRQHandler
+                0x0000000008001764                SPI1_IRQHandler
+                0x0000000008001764                TIM6_DAC_IRQHandler
+                0x0000000008001764                TIM1_BRK_TIM9_IRQHandler
+                0x0000000008001764                DCMI_IRQHandler
+                0x0000000008001764                CAN2_RX0_IRQHandler
+                0x0000000008001764                DMA2_Stream3_IRQHandler
+                0x0000000008001764                USART6_IRQHandler
+                0x0000000008001764                USART3_IRQHandler
+                0x0000000008001764                CRYP_IRQHandler
+                0x0000000008001764                CAN1_RX1_IRQHandler
+                0x0000000008001764                UART5_IRQHandler
+                0x0000000008001764                DMA2_Stream0_IRQHandler
+                0x0000000008001764                TIM4_IRQHandler
+                0x0000000008001764                I2C1_EV_IRQHandler
+                0x0000000008001764                DMA1_Stream6_IRQHandler
+                0x0000000008001764                DMA1_Stream1_IRQHandler
+                0x0000000008001764                UART4_IRQHandler
+                0x0000000008001764                TIM3_IRQHandler
+                0x0000000008001764                RCC_IRQHandler
+                0x0000000008001764                TIM8_BRK_TIM12_IRQHandler
+                0x0000000008001764                Default_Handler
+                0x0000000008001764                EXTI15_10_IRQHandler
+                0x0000000008001764                ADC_IRQHandler
+                0x0000000008001764                DMA1_Stream7_IRQHandler
+                0x0000000008001764                TIM7_IRQHandler
+                0x0000000008001764                CAN2_TX_IRQHandler
+                0x0000000008001764                TIM5_IRQHandler
+                0x0000000008001764                DMA2_Stream7_IRQHandler
+                0x0000000008001764                I2C3_EV_IRQHandler
+                0x0000000008001764                EXTI9_5_IRQHandler
+                0x0000000008001764                RTC_WKUP_IRQHandler
+                0x0000000008001764                ETH_WKUP_IRQHandler
+                0x0000000008001764                SPI2_IRQHandler
+                0x0000000008001764                OTG_HS_EP1_IN_IRQHandler
+                0x0000000008001764                DMA1_Stream0_IRQHandler
+                0x0000000008001764                CAN1_TX_IRQHandler
+                0x0000000008001764                EXTI4_IRQHandler
+                0x0000000008001764                FSMC_IRQHandler
+                0x0000000008001764                ETH_IRQHandler
+                0x0000000008001764                OTG_HS_EP1_OUT_IRQHandler
+                0x0000000008001764                WWDG_IRQHandler
+                0x0000000008001764                TIM2_IRQHandler
+                0x0000000008001764                OTG_FS_WKUP_IRQHandler
+                0x0000000008001764                TIM1_TRG_COM_TIM11_IRQHandler
+                0x0000000008001764                OTG_HS_IRQHandler
+                0x0000000008001764                EXTI1_IRQHandler
+                0x0000000008001764                USART2_IRQHandler
+                0x0000000008001764                I2C2_ER_IRQHandler
+                0x0000000008001764                DMA2_Stream1_IRQHandler
+                0x0000000008001764                CAN1_SCE_IRQHandler
+                0x0000000008001764                FLASH_IRQHandler
+                0x0000000008001764                DMA2_Stream4_IRQHandler
+                0x0000000008001764                USART1_IRQHandler
+                0x0000000008001764                OTG_FS_IRQHandler
+                0x0000000008001764                SPI3_IRQHandler
+                0x0000000008001764                DMA1_Stream4_IRQHandler
+                0x0000000008001764                I2C1_ER_IRQHandler
+                0x0000000008001764                DMA2_Stream6_IRQHandler
+                0x0000000008001764                DMA1_Stream3_IRQHandler
+ *(.glue_7)
+ .glue_7        0x0000000008001766        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x0000000008001766        0x0 linker stubs
+ *(.eh_frame)
+ *(.init)
+ *(.fini)
+                0x0000000008001768                . = ALIGN (0x4)
+ *fill*         0x0000000008001766        0x2 
+                0x0000000008001768                _etext = .
+
+.vfp11_veneer   0x0000000008001768        0x0
+ .vfp11_veneer  0x0000000008001768        0x0 linker stubs
+
+.v4_bx          0x0000000008001768        0x0
+ .v4_bx         0x0000000008001768        0x0 linker stubs
+
+.plt            0x0000000008001768        0x0
+ .plt           0x0000000008001768        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+
+.iplt           0x0000000008001768        0x0
+ .iplt          0x0000000008001768        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+
+.rodata         0x0000000008001768        0x0
+                0x0000000008001768                . = ALIGN (0x4)
+ *(.rodata)
+ *(.rodata*)
+                0x0000000008001768                . = ALIGN (0x4)
+
+.interp         0x0000000008001768       0x19
+ .interp        0x0000000008001768       0x19 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+
+.gnu.version_d  0x0000000008001784        0x0
+ .gnu.version_d
+                0x0000000008001784        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+
+.gnu.version    0x0000000008001782        0x0
+ .gnu.version   0x0000000008001782        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+
+.gnu.version_r  0x0000000008001784        0x0
+ .gnu.version_r
+                0x0000000008001784        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+
+.dynsym         0x0000000008001784       0x30
+ .dynsym        0x0000000008001784       0x30 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+
+.dynstr         0x00000000080017b4        0x1
+ .dynstr        0x00000000080017b4        0x1 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+
+.gnu.hash       0x00000000080017b8       0x18
+ .gnu.hash      0x00000000080017b8       0x18 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+
+.rel.dyn        0x00000000080017d0      0x310
+ .rel.got       0x00000000080017d0        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+ .rel.plt       0x00000000080017d0        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+ .rel.bss       0x00000000080017d0        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+ .rel.data.rel.ro
+                0x00000000080017d0        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+ .rel.iplt      0x00000000080017d0        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+ .rel.text.Reset_Handler
+                0x00000000080017d0       0x28 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+ .rel.isr_vector
+                0x00000000080017f8      0x2e8 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+ .rel.text      0x0000000008001ae0        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM            0x0000000008001ae0        0x0
+                0x0000000008001ae0                __exidx_start = .
+ *(.ARM.exidx*)
+                0x0000000008001ae0                __exidx_end = .
+
+.preinit_array  0x0000000008001ae0        0x0
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array*)
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000008001ae0        0x0
+                [!provide]                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array*)
+                [!provide]                        PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000008001ae0        0x0
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array*)
+                [!provide]                        PROVIDE (__fini_array_end = .)
+                0x0000000008001ae0                _sidata = LOADADDR (.data)
+
+.data           0x0000000020000000       0x24 load address 0x0000000008001ae0
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _sdata = .
+ *(.data)
+ .data          0x0000000020000000       0x14 CMakeFiles/stm32f405rgt_template.elf.dir/main/system_stm32f4xx.c.o
+                0x0000000020000000                SystemCoreClock
+                0x0000000020000004                AHBPrescTable
+ .data          0x0000000020000014       0x10 ../lib/libstd.a(stm32f4xx_rcc.c.o)
+ *(.data*)
+ .data.rel.ro   0x0000000020000024        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+                0x0000000020000024                . = ALIGN (0x4)
+                0x0000000020000024                _edata = .
+                0x0000000008001ba0                _siccmram = LOADADDR (.ccmram)
+
+.dynamic        0x0000000020000024       0x90 load address 0x0000000008001b04
+ .dynamic       0x0000000020000024       0x90 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+                0x0000000020000024                _DYNAMIC
+
+.got            0x00000000200000b4        0x0 load address 0x0000000008001b94
+ .got           0x00000000200000b4        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+
+.got.plt        0x00000000200000b4        0xc load address 0x0000000008001b94
+ .got.plt       0x00000000200000b4        0xc CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+                0x00000000200000b4                _GLOBAL_OFFSET_TABLE_
+
+.igot.plt       0x00000000200000c0        0x0 load address 0x0000000008001ba0
+ .igot.plt      0x00000000200000c0        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+
+.ccmram         0x0000000010000000        0x0 load address 0x0000000008001ba0
+                0x0000000010000000                . = ALIGN (0x4)
+                0x0000000010000000                _sccmram = .
+ *(.ccmram)
+ *(.ccmram*)
+                0x0000000010000000                . = ALIGN (0x4)
+                0x0000000010000000                _eccmram = .
+                0x0000000010000000                . = ALIGN (0x4)
+
+.bss            0x00000000200000c0        0x0
+                0x00000000200000c0                _sbss = .
+                0x00000000200000c0                __bss_start__ = _sbss
+ *(.bss)
+ *(.bss*)
+ *(COMMON)
+                0x00000000200000c0                . = ALIGN (0x4)
+                0x00000000200000c0                _ebss = .
+                0x00000000200000c0                __bss_end__ = _ebss
+
+.dynbss         0x00000000200000c0        0x0
+ .dynbss        0x00000000200000c0        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+
+._user_heap_stack
+                0x00000000200000c0      0x600
+                0x00000000200000c0                . = ALIGN (0x8)
+                [!provide]                        PROVIDE (end = .)
+                [!provide]                        PROVIDE (_end = .)
+                0x00000000200002c0                . = (. + _Min_Heap_Size)
+ *fill*         0x00000000200000c0      0x200 
+                0x00000000200006c0                . = (. + _Min_Stack_Size)
+ *fill*         0x00000000200002c0      0x400 
+                0x00000000200006c0                . = ALIGN (0x8)
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.ARM.attributes
+                0x0000000000000000       0x35
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000000000       0x21 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+ .ARM.attributes
+                0x0000000000000021       0x34 CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.o
+ .ARM.attributes
+                0x0000000000000055       0x34 CMakeFiles/stm32f405rgt_template.elf.dir/main/system_stm32f4xx.c.o
+ .ARM.attributes
+                0x0000000000000089       0x34 CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+ .ARM.attributes
+                0x00000000000000bd       0x34 ../lib/libstd.a(stm32f4xx_gpio.c.o)
+ .ARM.attributes
+                0x00000000000000f1       0x34 ../lib/libstd.a(stm32f4xx_rcc.c.o)
+OUTPUT(../bin/stm32f405rgt_template.elf elf32-littlearm)
+LOAD linker stubs
+LOAD /usr/lib/gcc-cross/arm-linux-gnueabihf/9/../../../../arm-linux-gnueabihf/lib/../lib/libc.a
+LOAD /usr/lib/gcc-cross/arm-linux-gnueabihf/9/../../../../arm-linux-gnueabihf/lib/../lib/libm.a
+LOAD /usr/lib/gcc-cross/arm-linux-gnueabihf/9/libgcc.a
+
+.comment        0x0000000000000000       0x2a
+ .comment       0x0000000000000000       0x2a CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.o
+                                         0x2b (size before relaxing)
+ .comment       0x000000000000002a       0x2b CMakeFiles/stm32f405rgt_template.elf.dir/main/system_stm32f4xx.c.o
+ .comment       0x000000000000002a       0x2b CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+ .comment       0x000000000000002a       0x2b ../lib/libstd.a(stm32f4xx_gpio.c.o)
+ .comment       0x000000000000002a       0x2b ../lib/libstd.a(stm32f4xx_rcc.c.o)
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/main/system_stm32f4xx.c.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libstd.a(stm32f4xx_gpio.c.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libstd.a(stm32f4xx_rcc.c.o)
+
+Cross Reference Table
+
+Symbol                                            File
+ADC_IRQHandler                                    CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+AHBPrescTable                                     CMakeFiles/stm32f405rgt_template.elf.dir/main/system_stm32f4xx.c.o
+BusFault_Handler                                  CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+                                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+CAN1_RX0_IRQHandler                               CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+CAN1_RX1_IRQHandler                               CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+CAN1_SCE_IRQHandler                               CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+CAN1_TX_IRQHandler                                CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+CAN2_RX0_IRQHandler                               CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+CAN2_RX1_IRQHandler                               CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+CAN2_SCE_IRQHandler                               CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+CAN2_TX_IRQHandler                                CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+CRYP_IRQHandler                                   CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DCMI_IRQHandler                                   CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DMA1_Stream0_IRQHandler                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DMA1_Stream1_IRQHandler                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DMA1_Stream2_IRQHandler                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DMA1_Stream3_IRQHandler                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DMA1_Stream4_IRQHandler                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DMA1_Stream5_IRQHandler                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DMA1_Stream6_IRQHandler                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DMA1_Stream7_IRQHandler                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DMA2_Stream0_IRQHandler                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DMA2_Stream1_IRQHandler                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DMA2_Stream2_IRQHandler                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DMA2_Stream3_IRQHandler                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DMA2_Stream4_IRQHandler                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DMA2_Stream5_IRQHandler                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DMA2_Stream6_IRQHandler                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DMA2_Stream7_IRQHandler                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+DebugMon_Handler                                  CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+                                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+Default_Handler                                   CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+ETH_IRQHandler                                    CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+ETH_WKUP_IRQHandler                               CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+EXTI0_IRQHandler                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+EXTI15_10_IRQHandler                              CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+EXTI1_IRQHandler                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+EXTI2_IRQHandler                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+EXTI3_IRQHandler                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+EXTI4_IRQHandler                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+EXTI9_5_IRQHandler                                CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+FLASH_IRQHandler                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+FPU_IRQHandler                                    CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+FSMC_IRQHandler                                   CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+GPIO_DeInit                                       ../lib/libstd.a(stm32f4xx_gpio.c.o)
+GPIO_Init                                         ../lib/libstd.a(stm32f4xx_gpio.c.o)
+                                                  CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.o
+GPIO_PinAFConfig                                  ../lib/libstd.a(stm32f4xx_gpio.c.o)
+GPIO_PinLockConfig                                ../lib/libstd.a(stm32f4xx_gpio.c.o)
+GPIO_ReadInputData                                ../lib/libstd.a(stm32f4xx_gpio.c.o)
+GPIO_ReadInputDataBit                             ../lib/libstd.a(stm32f4xx_gpio.c.o)
+GPIO_ReadOutputData                               ../lib/libstd.a(stm32f4xx_gpio.c.o)
+GPIO_ReadOutputDataBit                            ../lib/libstd.a(stm32f4xx_gpio.c.o)
+GPIO_ResetBits                                    ../lib/libstd.a(stm32f4xx_gpio.c.o)
+GPIO_SetBits                                      ../lib/libstd.a(stm32f4xx_gpio.c.o)
+GPIO_StructInit                                   ../lib/libstd.a(stm32f4xx_gpio.c.o)
+GPIO_ToggleBits                                   ../lib/libstd.a(stm32f4xx_gpio.c.o)
+GPIO_Write                                        ../lib/libstd.a(stm32f4xx_gpio.c.o)
+GPIO_WriteBit                                     ../lib/libstd.a(stm32f4xx_gpio.c.o)
+HASH_RNG_IRQHandler                               CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+HardFault_Handler                                 CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+                                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+I2C1_ER_IRQHandler                                CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+I2C1_EV_IRQHandler                                CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+I2C2_ER_IRQHandler                                CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+I2C2_EV_IRQHandler                                CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+I2C3_ER_IRQHandler                                CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+I2C3_EV_IRQHandler                                CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+MemManage_Handler                                 CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+                                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+NMI_Handler                                       CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+                                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+OTG_FS_IRQHandler                                 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+OTG_FS_WKUP_IRQHandler                            CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+OTG_HS_EP1_IN_IRQHandler                          CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+OTG_HS_EP1_OUT_IRQHandler                         CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+OTG_HS_IRQHandler                                 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+OTG_HS_WKUP_IRQHandler                            CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+PVD_IRQHandler                                    CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+PendSV_Handler                                    CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+                                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+RCC_AHB1PeriphClockCmd                            ../lib/libstd.a(stm32f4xx_rcc.c.o)
+                                                  CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.o
+RCC_AHB1PeriphClockLPModeCmd                      ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_AHB1PeriphResetCmd                            ../lib/libstd.a(stm32f4xx_rcc.c.o)
+                                                  ../lib/libstd.a(stm32f4xx_gpio.c.o)
+RCC_AHB2PeriphClockCmd                            ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_AHB2PeriphClockLPModeCmd                      ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_AHB2PeriphResetCmd                            ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_AHB3PeriphClockCmd                            ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_AHB3PeriphClockLPModeCmd                      ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_AHB3PeriphResetCmd                            ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_APB1PeriphClockCmd                            ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_APB1PeriphClockLPModeCmd                      ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_APB1PeriphResetCmd                            ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_APB2PeriphClockCmd                            ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_APB2PeriphClockLPModeCmd                      ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_APB2PeriphResetCmd                            ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_AdjustHSICalibrationValue                     ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_BackupResetCmd                                ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_ClearFlag                                     ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_ClearITPendingBit                             ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_ClockSecuritySystemCmd                        ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_DeInit                                        ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_GetClocksFreq                                 ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_GetFlagStatus                                 ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_GetITStatus                                   ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_GetSYSCLKSource                               ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_HCLKConfig                                    ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_HSEConfig                                     ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_HSICmd                                        ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_I2SCLKConfig                                  ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_IRQHandler                                    CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+RCC_ITConfig                                      ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_LSEConfig                                     ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_LSEModeConfig                                 ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_LSICmd                                        ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_LTDCCLKDivConfig                              ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_MCO1Config                                    ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_MCO2Config                                    ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_PCLK1Config                                   ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_PCLK2Config                                   ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_PLLCmd                                        ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_PLLConfig                                     ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_PLLI2SCmd                                     ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_PLLI2SConfig                                  ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_PLLSAICmd                                     ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_PLLSAIConfig                                  ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_RTCCLKCmd                                     ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_RTCCLKConfig                                  ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_SAIBlockACLKConfig                            ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_SAIBlockBCLKConfig                            ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_SAIPLLI2SClkDivConfig                         ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_SAIPLLSAIClkDivConfig                         ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_SYSCLKConfig                                  ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_TIMCLKPresConfig                              ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RCC_WaitForHSEStartUp                             ../lib/libstd.a(stm32f4xx_rcc.c.o)
+RTC_Alarm_IRQHandler                              CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+RTC_WKUP_IRQHandler                               CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+Reset_Handler                                     CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+SDIO_IRQHandler                                   CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+SPI1_IRQHandler                                   CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+SPI2_IRQHandler                                   CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+SPI3_IRQHandler                                   CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+SVC_Handler                                       CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+                                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+SysTick_Handler                                   CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+                                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+SystemCoreClock                                   CMakeFiles/stm32f405rgt_template.elf.dir/main/system_stm32f4xx.c.o
+SystemCoreClockUpdate                             CMakeFiles/stm32f405rgt_template.elf.dir/main/system_stm32f4xx.c.o
+SystemInit                                        CMakeFiles/stm32f405rgt_template.elf.dir/main/system_stm32f4xx.c.o
+                                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+TAMP_STAMP_IRQHandler                             CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+TIM1_BRK_TIM9_IRQHandler                          CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+TIM1_CC_IRQHandler                                CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+TIM1_TRG_COM_TIM11_IRQHandler                     CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+TIM1_UP_TIM10_IRQHandler                          CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+TIM2_IRQHandler                                   CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+TIM3_IRQHandler                                   CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+TIM4_IRQHandler                                   CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+TIM5_IRQHandler                                   CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+TIM6_DAC_IRQHandler                               CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+TIM7_IRQHandler                                   CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+TIM8_BRK_TIM12_IRQHandler                         CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+TIM8_CC_IRQHandler                                CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+TIM8_TRG_COM_TIM14_IRQHandler                     CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+TIM8_UP_TIM13_IRQHandler                          CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+UART4_IRQHandler                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+UART5_IRQHandler                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+USART1_IRQHandler                                 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+USART2_IRQHandler                                 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+USART3_IRQHandler                                 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+USART6_IRQHandler                                 CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+UsageFault_Handler                                CMakeFiles/stm32f405rgt_template.elf.dir/main/stm32f4xx_it.c.o
+                                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+WWDG_IRQHandler                                   CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+_DYNAMIC                                          CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+_GLOBAL_OFFSET_TABLE_                             CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+_ebss                                             CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+_edata                                            CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+_estack                                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+_sbss                                             CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+_sdata                                            CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+_sidata                                           CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+g_pfnVectors                                      CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o
+led_conf                                          CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.o
+led_off                                           CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.o
+led_on                                            CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.o
+main                                              CMakeFiles/stm32f405rgt_template.elf.dir/main/main.c.o
+                                                  CMakeFiles/stm32f405rgt_template.elf.dir/core/startup_stm32f40xx.s.o

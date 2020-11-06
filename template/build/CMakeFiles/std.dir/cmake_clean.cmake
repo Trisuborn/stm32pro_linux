@@ -42,7 +42,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/std.dir/stdlib/src/stm32f4xx_tim.c.o"
   "CMakeFiles/std.dir/stdlib/src/stm32f4xx_usart.c.o"
   "CMakeFiles/std.dir/stdlib/src/stm32f4xx_wwdg.c.o"
-  "CMakeFiles/std.dir/stdlib/src/system_stm32f4xx.c.o"
 )
 
 # Per-language clean rules from dependency scanning.

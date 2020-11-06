@@ -40,6 +40,8 @@ cmsis_ccs.h
 cmsis_csm.h
 -
 
+../inc/system_stm32f4xx.h
+
 ../main/stm32f4xx.h
 core_cm4.h
 ../main/core_cm4.h
@@ -551,8 +553,4 @@ stm32f4xx_wwdg.h
 /home/su/stm32pro_linux/template/stdlib/src/stm32f4xx_wwdg.h
 stm32f4xx_rcc.h
 /home/su/stm32pro_linux/template/stdlib/src/stm32f4xx_rcc.h
-
-/home/su/stm32pro_linux/template/stdlib/src/system_stm32f4xx.c
-stm32f4xx.h
-/home/su/stm32pro_linux/template/stdlib/src/stm32f4xx.h
 

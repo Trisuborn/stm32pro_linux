@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libmain.a  CMakeFiles/main.dir/main/main.c.o CMakeFiles/main.dir/main/stm32f4xx_it.c.o CMakeFiles/main.dir/main/system_stm32f4xx.c.o
+/usr/bin/ranlib ../lib/libmain.a
